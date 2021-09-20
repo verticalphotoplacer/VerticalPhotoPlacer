@@ -21,9 +21,9 @@ Please type "Vertical Photo Placer" in the search box if it is not easily locate
 
 ## Usage
 
-Please follow this [tutorial](https://semiautomaticclassificationmanual.readthedocs.io/en/latest/tutorial_1.html).
+Please follow this [tutorial].
 
-[Videos](https://www.youtube.com/user/fromgistors) are also available.
+[Videos] are also available.
 
 ## Contributing
 
