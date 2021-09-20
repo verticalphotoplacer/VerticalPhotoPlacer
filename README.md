@@ -33,7 +33,7 @@ If you find some issue that you are willing to fix, code contributions are welco
 
 ## Credits
 
-The author thanks the International Digital Earth Applied Science Research Center, Chubu University and \nNational Research Institute for Earth Science and Disaster Resilience (NIED), Japan.
+The author thanks the International Digital Earth Applied Science Research Center, Chubu University and National Research Institute for Earth Science and Disaster Resilience (NIED), Japan.
 
 ## License
 
