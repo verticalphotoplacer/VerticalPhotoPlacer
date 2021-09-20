@@ -4,6 +4,8 @@
 
 The objective of VPP is to provide a tool for quickly geo-referencing and visualization of vertical drone photos on map. Geo-reference is done by generating a world file for each photo according to ESRI specification, see https://en.wikipedia.org/wiki/World_file for detailed information.
 
+![VPP](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/vpp_example.png?raw=true)
+
 This plugin should be used in cases when quick information visualization is needed such as disaster response. If geo-referencing accuracy is important, more advanced tools should be considered.
 
 ## Plugin installation
