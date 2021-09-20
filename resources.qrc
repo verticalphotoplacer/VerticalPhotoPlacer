@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/plugins/vertical_photo_placer">
+        <file>icon.png</file>
+        <file alias="app">icon/app.png</file>
+        <file alias="clean">icon/clean.png</file>
+        <file alias="copypaste">icon/copypaste.png</file>
+        <file alias="erase">icon/erase.png</file>
+        <file alias="save2file">icon/save2file.png</file>
+		<file alias="save2file2">icon/save2file2.png</file>
+    </qresource>
+</RCC>

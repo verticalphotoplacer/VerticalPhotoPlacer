@@ -1,0 +1,27 @@
+<camlist>
+  <model>
+    <name>fc300s</name>
+    <width>8.6</width>
+    <height>6.6</height>
+  </model>
+  <model>
+    <name>fc6310</name>
+    <width>13.2</width>
+    <height>8.8</height>
+  </model>
+  <model>
+    <name>hero5 black</name>
+    <width>6.17</width>
+    <height>4.55</height>
+  </model>
+  <model>
+    <name>fc220</name>
+    <width>6.16</width>
+    <height>4.55</height>
+  </model>
+  <model>
+    <name>fc7303</name>
+    <width>6.3</width>
+    <height>4.7</height>
+  </model>
+</camlist>
