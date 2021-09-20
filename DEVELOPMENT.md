@@ -101,7 +101,7 @@ In QGIS 3 you can install a plugin from the zip archive using the plugin manager
 
 ![Install VPP from zip archive](docs/install%20SCP%20from%20zip%20archive.png)
 
-## Test the SCP
+## Test the VPP
 
 Start QGIS 3 and check if the plugin is properly installed. If you are running QGIS in another computer or using another profile, install the plugin from the zip file.
 
@@ -135,7 +135,7 @@ After doing your Pull Request, make sure you are available to provide feedback t
 
 * **Man Duc Chuc** 
 
-See also the list of [contributors](https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin/graphs/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/graphs/contributors) who participated in this project.
 
 ## License
 
