@@ -58,7 +58,7 @@ origin	git@github.com:yourgithubusername/VerticalPhotoPlacerPlugin.git (push)
 Add the original repository with the alias `upstream` with:
 
 ```bash
-git remote add upstream https://github.com/chuc92man/VerticalPhotoPlacerPlugin
+git remote add upstream https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin
 ```
 #### To contribute
 
@@ -84,7 +84,7 @@ You are now ready to issue your Pull Request. Go to your GitHub repository inter
 ### Compile and deploy on your local computer 
 
 ```bash
-cd ~/dev/SemiAutomaticClassificationPlugin/
+cd ~/dev/VerticalPhotoPlacerPlugin/
 make deploy
 ```
 `make deploy` will copy the plugin to your QGIS 3 default profile.
@@ -95,11 +95,11 @@ If you want to test your modifications in other computers or to distribute to ot
 make package VERSION=mycontribution
 ```
 
-This will create a new archive `SemiAutomaticClassificationPlugin.zip`.
+This will create a new archive `VerticalPhotoPlacerPlugin.zip`.
 
 In QGIS 3 you can install a plugin from the zip archive using the plugin manager interface.
 
-![Install SCP from zip archive](docs/install%20SCP%20from%20zip%20archive.png)
+![Install VPP from zip archive](docs/install%20SCP%20from%20zip%20archive.png)
 
 ## Test the SCP
 
@@ -133,7 +133,7 @@ After doing your Pull Request, make sure you are available to provide feedback t
 
 ## Authors
 
-* **Luca Congedo** 
+* **Man Duc Chuc** 
 
 See also the list of [contributors](https://github.com/semiautomaticgit/SemiAutomaticClassificationPlugin/graphs/contributors) who participated in this project.
 
