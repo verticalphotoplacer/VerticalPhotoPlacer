@@ -554,7 +554,6 @@ class VerticalPhotoPlacer:
             return
 
         method_index = self.dlg.alt_corr_method.currentIndex()
-        # FIXME: this method should check if worldfiles exist
         if method_index == 0:
             self.quickView(photos)
         elif method_index == 1:
