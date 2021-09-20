@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# VerticalPhotoPlacerPlugin
-=======
 # Vertical Photo Placer Plugin
 
 ![VPP](https://github.com/chuc92man/VerticalPhotoPlacerPlugin/blob/master/icon/app.png?raw=true) The Vertical Photo Placer Plugin (VPP) is a free open source plugin for QGIS that performs quick placement of vertical drone photos on map.
@@ -46,4 +43,3 @@ Coming soon!
 
 ## Code on Zenodo
 Coming soon!
->>>>>>> eec4dff40625650b8be2edaf74896e4c2592bdd4
