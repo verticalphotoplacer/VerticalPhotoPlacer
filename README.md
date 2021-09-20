@@ -21,7 +21,7 @@ Please type "Vertical Photo Placer" in the search box if it is not easily locate
 
 ## Usage
 
-Please follow this [tutorial].
+Please follow this [tutorial]https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/wiki.
 
 [Videos] are also available.
 
