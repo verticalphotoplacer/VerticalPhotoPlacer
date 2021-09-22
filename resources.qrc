@@ -2,6 +2,7 @@
     <qresource prefix="/plugins/vertical_photo_placer">
         <file>icon.png</file>
         <file alias="app">icon/app.png</file>
+		<file alias="app">icon/app.svg</file>
         <file alias="clean">icon/clean.png</file>
         <file alias="copypaste">icon/copypaste.png</file>
         <file alias="erase">icon/erase.png</file>

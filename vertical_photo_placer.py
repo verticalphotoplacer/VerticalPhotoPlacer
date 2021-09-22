@@ -540,7 +540,7 @@ class VerticalPhotoPlacer:
     def setupWelcomePhoto(self):
         scene = QGraphicsScene()
         self.dlg.img_placeholder.setScene(scene)
-        pixitem = QGraphicsPixmapItem(QPixmap(os.path.join(self.plugin_dir, "icon.png")))
+        pixitem = QGraphicsPixmapItem(QPixmap(':/plugins/vertical_photo_placer/icon.png'))
         scene.addItem(pixitem)
         scene.setSceneRect(scene.itemsBoundingRect())
 
