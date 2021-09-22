@@ -544,7 +544,6 @@ class VerticalPhotoPlacer:
         pixitem = QGraphicsPixmapItem(QPixmap(os.path.join(self.plugin_dir, "icon.png")))
         scene.addItem(pixitem)
         scene.setSceneRect(scene.itemsBoundingRect())
-        #self.dlg.img_placeholder.setFrameShape(QFrame.NoFrame)
 
     """ Processing functions"""
     def onExecute(self):
