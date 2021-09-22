@@ -37,7 +37,7 @@ from qgis.gui import QgsMapToolEmitPoint
 
 from qgis.PyQt.QtCore import QSettings, QTranslator, QCoreApplication, QFileInfo, Qt
 from qgis.PyQt.QtGui import QIcon, QPixmap
-from qgis.PyQt.QtWidgets import QAction, QFileDialog, QMessageBox, QGraphicsScene, QFrame
+from qgis.PyQt.QtWidgets import QAction, QFileDialog, QMessageBox, QGraphicsScene, QFrame, QGraphicsPixmapItem
 
 # Initialize Qt resources from file resources.py
 from .resources import *
@@ -294,6 +294,8 @@ class VerticalPhotoPlacer:
         self.dlg.adjphotos_graphics_view.setScene(self.adj_scene)
         self.dlg.adjphotos_setrange_button.clicked.connect(self.onAltSetrange)
 
+        self.setupWelcomePhoto()
+
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
         for action in self.actions:
@@ -535,6 +537,14 @@ class VerticalPhotoPlacer:
     def onClose(self):
         """Close plugin."""
         self.dlg.close()
+
+    def setupWelcomePhoto(self):
+        scene = QGraphicsScene()
+        self.dlg.img_placeholder.setScene(scene)
+        pixitem = QGraphicsPixmapItem(QPixmap(os.path.join(self.plugin_dir, "icon.png")))
+        scene.addItem(pixitem)
+        scene.setSceneRect(scene.itemsBoundingRect())
+        #self.dlg.img_placeholder.setFrameShape(QFrame.NoFrame)
 
     """ Processing functions"""
     def onExecute(self):
