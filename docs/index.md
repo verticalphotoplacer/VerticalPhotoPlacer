@@ -22,7 +22,7 @@ The default VPP user interface requires only one input to work, which is fullpat
 
 
 ### Home point position
-![HomepointUI](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/HomepointUI.PNG?raw=true)
+![HomepointUI](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/HomepointUI.PNG?raw=true#center)
 |:--:| 
 | *Figure 2. Guide to Home point correction* |
 
