@@ -1,17 +1,16 @@
-Welcome to the Vertical Photo Placer Plugin user guide!
+![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/icon/app_smaller.png?raw=true) Welcome to the Vertical Photo Placer Plugin user guide!
 
-## Contents
-[Quick start](#quick-start)
-
-[Improving visualization of vertical drone photos](#improving-visualization-of-vertical-drone-photos)
-
-[Custom foo description](#foo)
-
-![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/icon/app_smaller.png?raw=true) The Vertical Photo Placer Plugin (VPP) is a free open source plugin for QGIS that performs quick placement of vertical drone photos on map.
+The Vertical Photo Placer Plugin (VPP) is a free open source plugin for QGIS that performs quick placement of vertical drone photos on map.
 
 The objective of VPP is to provide a tool for quickly geo-referencing and visualization of vertical drone photos on map. Geo-reference is done by generating a world file for each photo according to ESRI specification, see https://en.wikipedia.org/wiki/World_file for detailed information.
 
 This plugin should be used in cases when quick information visualization is needed such as disaster response. If geo-referencing accuracy is top priority, more advanced tools should be considered.
+
+* [Quick start](#quick-start)
+* [Improving visualization of vertical drone photos](#improving-visualization-of-vertical-drone-photos)
+   * [Home point position](#home-point-position)
+   * [Adjacent photo matching](#adjacent-photo-matching)
+   * [Simple correction](#simple-correction)
 
 ## Quick Start
 The default VPP user interface requires only one input to work, which is fullpath of the photos folder (See figure 1). User could either drag and drop/or browse to the input folder. In this mode, VPP performs Quick view to geo-referencing and visualizing all vertical drone photos found in the input folder. Geo-referencing uses default parameters as available in each photo's metadata. This is done automatically.  
