@@ -22,7 +22,9 @@ The default VPP user interface requires only one input to work, which is fullpat
   <em><b>Figure 1. Guide to Quick view</b></em>
 </p>
 
-It is recommended to use this feature first to quickly visualize photos. If the visualization is unsatisfactory, adjustment could be made later.
+It is recommended to use this feature first to quickly visualize photos. Quick view will often deliver good placement of vertical photos which was taken on flat terrain from a home point of similar terrain elevation.
+
+If the visualization is unsatisfactory, several adjustment features are provided, as described in the following section.
 
 ## Improving visualization of vertical drone photos
 
