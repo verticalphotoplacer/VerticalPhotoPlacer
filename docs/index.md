@@ -16,7 +16,7 @@ This plugin should be used in cases when quick information visualization is need
 The default VPP user interface requires only one input to work, which is the full path of the photos folder (See figure 1). User could either drag and drop/or browse to the input folder. In this mode, VPP performs Quick view to geo-referencing and visualizing all vertical drone photos found in the input folder. Geo-referencing uses default parameters as available in each photo's metadata. This is done automatically.  
 
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/DefaultUI.PNG?raw=true" alt="Quickview_Guide">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/DefaultUI.PNG?raw=true" alt="Quickview_Guide">
   <br>
   <br>
   <em><b>Figure 1. Guide to Quick view</b></em>
@@ -36,14 +36,14 @@ Although GPS altitude is less stable than barometer altitude, it is still useful
 
 ### Home point correction
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/HomepointUI.PNG?raw=true" alt="Homepoing_Guide">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/HomepointUI.PNG?raw=true" alt="Homepoing_Guide">
   <br>
   <br>
   <em><b>Figure 2. Guide to Home point correction</b></em>
 </p>
 
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/homepoint_principle.png?raw=true" alt="Homepoing_Principle">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/homepoint_principle.png?raw=true" alt="Homepoing_Principle">
   <br>
   <br>
   <em><b>Figure 3. Background of estimation of photo's ground altitude from home point's terrain altitude</b></em>
@@ -53,21 +53,21 @@ Although GPS altitude is less stable than barometer altitude, it is still useful
 To be updated.
 
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_after.PNG?raw=true" alt="Adj_UI_afterSliding">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_after.PNG?raw=true" alt="Adj_UI_afterSliding">
   <br>
   <br>
   <em><b>Figure 4. Guide to Adjacent photos matching (after sliding)</b></em>
 </p>
 
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_before.PNG?raw=true" alt="Adj_UI_beforeSliding">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_before.PNG?raw=true" alt="Adj_UI_beforeSliding">
   <br>
   <br>
   <em><b>Figure 5. Guide to Adjacent photos matching (before sliding)</b></em>
 </p>
 
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/adj_principle.png?raw=true" alt="Adj_Principle">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/adj_principle.png?raw=true" alt="Adj_Principle">
   <br>
   <br>
   <em><b>Figure 6. Background of estimation of photo's ground altitude by matching two adjacent photos</b></em>
@@ -75,20 +75,25 @@ To be updated.
 
 ### Simple correction
 
+This feature tries to estimate photo's ground altitude from GPS altitude. Required inputs are photos input folder and a DEM file (See Figure 7). In the correction method, please select "Simple correction". DEM file could be SRTM or any applicable datasets. This is similar to the previous barometer-based altitude correction.   
+
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/SimpleUI.PNG?raw=true" alt="SimpleCorr_Guide">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/SimpleUI.PNG?raw=true" alt="SimpleCorr_Guide">
   <br>
   <br>
   <em><b>Figure 7. Guide to Simple correction</b></em>
 </p>
 
+The basic of this feature is that the ground altitude is considered part of GPS altitude. The remaining part is terrain elevation. Therefore, ground altitude could be derived by substracting terrain elevation from GPS altitude (See Figure 8). 
+
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/simplecorr_principle.png?raw=true" alt="SimpleCorr_Principle">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/simplecorr_principle.png?raw=true" alt="SimpleCorr_Principle">
   <br>
   <br>
   <em><b>Figure 8. Background of estimation of photo's ground altitude by terrain substraction</b></em>
 </p>
 
-This feature tries to estimate photo's ground altitude from GPS altitude. The ground altitude is considered part of GPS altitude. The remaining part is terrain elevation. Therefore, to use Simple correction, a digital elevation data file (DEM) is required. DEM file could be SRTM or any applicable datasets. 
-
-Because Simple correction uses GPS altitude which may often be less stable than Barometer altitude, this feature should be used in case where the photos do not have Barometer altitude. 
+Because Simple correction uses GPS altitude which may often be less stable than Barometer altitude, this feature should be used in cases where:
+* The photos do not have Barometer altitude.  
+* It is difficult to remember homepoint location.
+* The GPS accuracy is so low that it is difficult to match adjacent photos.
