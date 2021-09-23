@@ -13,7 +13,7 @@ The default VPP user interface requires only one input to work, which is fullpat
   <img
   src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/DefaultUI.PNG?raw=true"
   alt="The beautiful MDN logo.">
-  <figcaption>MDN Logo</figcaption>
+  <figcaption text-align="center">MDN Logo</figcaption>
 </figure>
 
 <p align="center">
