@@ -1,5 +1,12 @@
 Welcome to the Vertical Photo Placer Plugin user guide!
 
+## Contents
+[Quick start](#quick-start)
+
+[Improving visualization of vertical drone photos](#improving-visualization-of-vertical-drone-photos)
+
+[Custom foo description](#foo)
+
 ![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/icon/app_smaller.png?raw=true) The Vertical Photo Placer Plugin (VPP) is a free open source plugin for QGIS that performs quick placement of vertical drone photos on map.
 
 The objective of VPP is to provide a tool for quickly geo-referencing and visualization of vertical drone photos on map. Geo-reference is done by generating a world file for each photo according to ESRI specification, see https://en.wikipedia.org/wiki/World_file for detailed information.
@@ -15,6 +22,8 @@ The default VPP user interface requires only one input to work, which is fullpat
   <br>
   <em><b>Figure 1. Guide to Quick view</b></em>
 </p>
+
+It is recommended to use this feature first to quickly visualize photos. If the visualization is unsatisfactory, adjustment could be made later.
 
 ## Improving visualization of vertical drone photos
 
