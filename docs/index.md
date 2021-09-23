@@ -8,7 +8,7 @@ This plugin should be used in cases when quick information visualization is need
 
 * [Quick start](#quick-start)
 * [Improving visualization of vertical drone photos](#improving-visualization-of-vertical-drone-photos)
-   * [Home point position](#home-point-position)
+   * [Home point correction](#home-point-correction)
    * [Adjacent photo matching](#adjacent-photo-matching)
    * [Simple correction](#simple-correction)
 
@@ -28,9 +28,16 @@ If the visualization is unsatisfactory, several adjustment features are provided
 
 ## Improving visualization of vertical drone photos
 
+Visualization may be influenced by several factors which include photo's ground altitude and GPS accuracy. GPS accuracy is often known and could be corrected in sophisticated software. This plugin focuses on estimation of correct photo's ground altitude, to enhance visualization.
+
+Drone photos such as DJI Phantom 4 contain barometer altitude and GPS altitude. Barometer altitude is often more stable than GPS altitude, but it is measured against home point. This could significantly reduce visualization if terrain elevation of the home point is much higher or lower than photo's terrain altitude. Therefore, it is desirable to estimate home point's terrain elevation which then could be used to estimate photo's ground altitude. [Home point correction](#home-point-correction) and [Adjacent photo matching](#adjacent-photo-matching) introduce two ways to estimate home point's terrain elevation.
+
+Although GPS altitude is less stable than barometer altitude, it is still useful in case where there are no barometer altitude, such as in some fix-wing drone.
+But GPS altitude is still not the same as ground altitude yet. [Simple correction](#simple-correction) implements a method to estimate ground altitude from GPS altitude.
 
 
-### Home point position
+
+### Home point correction
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/HomepointUI.PNG?raw=true" alt="Homepoing_Guide">
   <br>
