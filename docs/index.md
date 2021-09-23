@@ -17,8 +17,8 @@ The default VPP user interface requires only one input to work, which is fullpat
 
 {:.center}
 ->|![DefaultUI](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/DefaultUI.PNG?raw=true)|<-
-|:--:| 
-| *Figure 1. Guide to Quick view* |
+->|:--:| <-
+->| *Figure 1. Guide to Quick view* |<-
 
 <p align="center">
   <img src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/DefaultUI.PNG?raw=true" alt>
