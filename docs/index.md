@@ -10,7 +10,7 @@ This plugin should be used in cases when quick information visualization is need
 The default VPP user interface requires only one input to work, which is fullpath of the photos folder (See figure 1). User could either drag and drop/or browse to the input folder. In this mode, VPP performs Quick view to geo-referencing and visualizing all vertical drone photos found in the input folder. Geo-referencing uses default parameters as available in each photo's metadata. This is done automatically.  
 
 <p align="center">
-<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/DefaultUI.PNG?raw=true">
+<img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/DefaultUI.PNG?raw=true">
   <br>
   <em><b>Figure 1. Guide to Quick view</b></em>
 </p>
@@ -19,36 +19,36 @@ The default VPP user interface requires only one input to work, which is fullpat
 
 
 ### Home point position
-![HomepointUI](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/HomepointUI.PNG?raw=true#center)
+![HomepointUI](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/HomepointUI.PNG?raw=true#center)
 |:--:| 
 | *Figure 2. Guide to Home point correction* |
 
-![Homepoint_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/homepoint_principle.png?raw=true)
+![Homepoint_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/homepoint_principle.png?raw=true)
 |:--:| 
 | *Figure 3. Background of estimation of photo's ground altitude from home point's terrain altitude* |
 
 ### Adjacent photo matching
 To be updated.
 
-![Adj_UI_after](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/Adj_UI_after.PNG?raw=true)
+![Adj_UI_after](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_after.PNG?raw=true)
 |:--:| 
 | *Figure 4. Guide to Adjacent photos matching (after sliding)* |
 
-![Adj_UI_before](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/Adj_UI_before.PNG?raw=true)
+![Adj_UI_before](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_before.PNG?raw=true)
 |:--:| 
 | *Figure 5. Guide to Adjacent photos matching (before sliding)* |
 
-![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/adj_principle.png?raw=true)
+![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/adj_principle.png?raw=true)
 |:--:| 
 | *Figure 6. Background of estimation of photo's ground altitude by matching two adjacent photos* |
 
 ### Simple correction
 
-![SimpleUI](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/SimpleUI.PNG?raw=true)
+![SimpleUI](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/SimpleUI.PNG?raw=true)
 |:--:| 
 | *Figure 7. Guide to Simple correction* |
 
-![SimpleCorr_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/simplecorr_principle.png?raw=true)
+![SimpleCorr_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/simplecorr_principle.png?raw=true)
 |:--:| 
 | *Figure 8. Background of estimation of photo's ground altitude by terrain substraction* |
 
