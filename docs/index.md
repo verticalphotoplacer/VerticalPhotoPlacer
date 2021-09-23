@@ -8,6 +8,12 @@ This plugin should be used in cases when quick information visualization is need
 
 ## Quick Start
 The default VPP user interface requires only one input to work, which is fullpath of the photos folder (See figure 1). User could either drag and drop/or browse to the input folder. In this mode, VPP performs Quick view to geo-referencing and visualizing all vertical drone photos found in the input folder. Geo-referencing uses default parameters as available in each photo's metadata. This is done automatically.  
+<style>
+img[src*='#center'] { 
+    display: block;
+    margin: auto;
+}
+</style>
 
 |![DefaultUI](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/DefaultUI.PNG?raw=true)|
 |:--:| 
