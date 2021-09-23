@@ -12,6 +12,7 @@ The default VPP user interface requires only one input to work, which is fullpat
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/DefaultUI.PNG?raw=true" alt="Quickview_Guide">
   <br>
+  <br>
   <em><b>Figure 1. Guide to Quick view</b></em>
 </p>
 
@@ -22,11 +23,13 @@ The default VPP user interface requires only one input to work, which is fullpat
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/HomepointUI.PNG?raw=true" alt="Homepoing_Guide">
   <br>
+  <br>
   <em><b>Figure 2. Guide to Home point correction</b></em>
 </p>
 
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/homepoint_principle.png?raw=true" alt="Homepoing_Principle">
+  <br>
   <br>
   <em><b>Figure 3. Background of estimation of photo's ground altitude from home point's terrain altitude</b></em>
 </p>
@@ -37,17 +40,20 @@ To be updated.
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_after.PNG?raw=true" alt="Adj_UI_afterSliding">
   <br>
+  <br>
   <em><b>Figure 4. Guide to Adjacent photos matching (after sliding)</b></em>
 </p>
 
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_before.PNG?raw=true" alt="Adj_UI_beforeSliding">
   <br>
+  <br>
   <em><b>Figure 5. Guide to Adjacent photos matching (before sliding)</b></em>
 </p>
 
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/adj_principle.png?raw=true" alt="Adj_Principle">
+  <br>
   <br>
   <em><b>Figure 6. Background of estimation of photo's ground altitude by matching two adjacent photos</b></em>
 </p>
@@ -57,11 +63,13 @@ To be updated.
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/SimpleUI.PNG?raw=true" alt="SimpleCorr_Guide">
   <br>
+  <br>
   <em><b>Figure 7. Guide to Simple correction</b></em>
 </p>
 
 <p align="center">
 <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/simplecorr_principle.png?raw=true" alt="SimpleCorr_Principle">
+  <br>
   <br>
   <em><b>Figure 8. Background of estimation of photo's ground altitude by terrain substraction</b></em>
 </p>
