@@ -7,7 +7,7 @@ The objective of VPP is to provide a tool for quickly geo-referencing and visual
 This plugin should be used in cases when quick information visualization is needed such as disaster response. If geo-referencing accuracy is top priority, more advanced tools should be considered.
 
 * [Installation](#installation)
-   * [Install from QGIS's Manage and Install Plugins Interface](#install-from-qgis-manage-and-install-plugins-interface)
+   * [Install from QGIS Manage and Install Plugins Interface](#install-from-qgis-manage-and-install-plugins-interface)
    * [Install from source](#install-from-source)
 * [Quick start](#quick-start)
 * [Improving visualization of vertical drone photos](#improving-visualization-of-vertical-drone-photos)
