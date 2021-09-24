@@ -28,11 +28,23 @@ First, install QGIS 3.x if it is not installed yet. Please download and install 
 Then, open the QGIS application and install this plugin by following this [guide (sections 9.1.1 and 9.1.2)](https://docs.qgis.org/3.16/en/docs/training_manual/qgis_plugins/fetching_plugins.html). 
 Please type "Vertical Photo Placer" in the search box if it is not easily located.
 
+<p align="center">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_interface.png?raw=true" alt="Quickview_Guide">
+  <br>
+  <br>
+  <em><b>Figure 1. Guide to Quick view</b></em>
+</p>
+
 ### Install from source
 
-![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_interface.png?raw=true)
+QGIS also allows to install plugin from zip file. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file name "<b>vertical-photo-placer.zip</b>" (See Figure 1). 
 
-![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/install_plugin_from_zip_archive_update.png?raw=true)
+<p align="center">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/install_plugin_from_zip_archive_update.png?raw=true" alt="Install plugin from zip">
+  <br>
+  <br>
+  <em><b>Figure 1. Install VPP plugin from zip file</b></em>
+</p>
 
 ## Quick Start
 The default VPP user interface requires only one input to work, which is the full path of the photos folder (See figure 1). Users could either drag and drop/or browse to the input folder. In this mode, VPP performs Quick view to geo-referencing and visualizing all vertical drone photos found in the input folder. Geo-referencing uses default parameters as available in each photo's metadata. This is done automatically.  
