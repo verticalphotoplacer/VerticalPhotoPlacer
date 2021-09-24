@@ -1,33 +1,43 @@
 [general]
 name=Vertical Photo Placer
 qgisMinimumVersion=3.0
-description=The Vertical Photo Placer (VPP) is a free open source plugin for QGIS that performs quick placement of vertical drone photos on map.
+description=The Vertical Photo Placer (VPP) is a free open source plugin for QGIS that performs quick placement of vertical drone photos on map
 version=0.1
 author=Man Duc Chuc
 email=chuc92man@gmail.com
-category=Raster
 
-about=Developed by Man Duc Chuc at Chubu University, the Vertical Photo Placer (VPP) plugin allows quick geo-referencing and visualizing of vertical drone photos on map, which is intended to be used in emergency response.
+about=Developed at Chubu University, the Vertical Photo Placer (VPP) plugin allows quick geo-referencing and visualizing of vertical drone photos on map, which is intended to be used in emergency response.
 
 tracker=https://github.com/verticalphotoplacer/VerticalPhotoPlacer/issues
 repository=https://github.com/verticalphotoplacer/VerticalPhotoPlacer.git
+# End of mandatory metadata
+
+# Recommended items:
 
 hasProcessingProvider=no
+# Uncomment the following line and add your changelog:
+# changelog=
 
-; start of optional metadata
-changelog=
-	
-	1.0.0
-	First version
-
-tags=visualization,drone,mapping,qgis-plugin,photo
+# Tags are comma separated with spaces allowed
+tags=python
 
 homepage=https://verticalphotoplacer.github.io/VerticalPhotoPlacer/
-category=Plugins
+category=Raster
 icon=icon.png
-
+# experimental flag
 experimental=False
+
+# deprecated flag (applies to the whole plugin, not just a single version)
 deprecated=False
 
+# Since QGIS 3.8, a comma separated list of plugins to be installed
+# (or upgraded) can be specified.
+# Check the documentation for more information.
+# plugin_dependencies=
 
+# Category of the plugin: Raster, Vector, Database or Web
+#category=Raster
+
+# If the plugin can run on QGIS Server.
+server=False
 
