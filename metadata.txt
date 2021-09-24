@@ -20,7 +20,6 @@ changelog=
 	1.0.0
 	First version
 
-
 tags=visualization,drone,mapping,qgis-plugin,photo
 
 homepage=https://verticalphotoplacer.github.io/VerticalPhotoPlacerPlugin/
