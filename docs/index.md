@@ -24,7 +24,7 @@ The default VPP user interface requires only one input to work, which is the ful
 
 It is recommended to use this feature first to quickly visualize photos. Quick view will often deliver good placement of vertical photos which were taken on flat terrain from a home point of similar terrain elevation.
 
-If the visualization is unsatisfactory, several adjustment features are provided, as described in the following section.
+If the visualization is unsatisfactory, several adjustment features are provided, as described in the [following section](#improving-visualization-of-vertical-drone-photos).
 
 ## Improving visualization of vertical drone photos
 
@@ -45,7 +45,7 @@ This feature tries to estimate photo's ground altitude from home point's terrain
   <em><b>Figure 2. Guide to Home point correction</b></em>
 </p>
 
-
+The basic of this feature is that photo's ground altitude (True ground altitude) could be estimated from its barometer altitude, terrain altitude and home point's terrain altitude (See Figure 3).
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/homepoint_principle.png?raw=true" alt="Homepoing_Principle">
@@ -53,6 +53,8 @@ This feature tries to estimate photo's ground altitude from home point's terrain
   <br>
   <em><b>Figure 3. Background of estimation of photo's ground altitude from home point's terrain altitude</b></em>
 </p>
+
+As user is expected to provide location of the home point, it may be difficult in cases such as the user is not the person taking the photos, or just simply forgot the location. In such situations, [Adjacent photo matching](#adjacent-photo-matching) may be useful.
 
 ### Adjacent photo matching
 
