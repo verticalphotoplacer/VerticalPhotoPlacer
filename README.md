@@ -10,14 +10,7 @@ This plugin should be used in cases when quick information visualization is need
 
 ## Plugin installation
 
-The VPP is developed with Python 3 and available for QGIS version 3.x. This plugin requires the installation of GDAL, NumPy, Exiftool.
-
-The easiest way to install VPP is through QGIS's Manage and Install Plugins Interface.
-
-First, install QGIS 3.x if it is not installed yet. Please download and install following this [guide](https://qgis.org/en/site/forusers/download.html).
-
-Then, open the QGIS application and install this plugin by following this [guide (sections 9.1.1 and 9.1.2)](https://docs.qgis.org/3.16/en/docs/training_manual/qgis_plugins/fetching_plugins.html). 
-Please type "Vertical Photo Placer" in the search box if it is not easily located.
+Please follow this [tutorial](https://verticalphotoplacer.github.io/VerticalPhotoPlacer/).
 
 ## Usage
 
