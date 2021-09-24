@@ -99,7 +99,7 @@ This will create a new archive `VerticalPhotoPlacerPlugin.zip`.
 
 In QGIS 3 you can install a plugin from the zip archive using the plugin manager interface.
 
-![Install VPP from zip archive](docs/img/install_plugin_from_zip_archive.png)
+![Install VPP from zip archive](docs/img/install_plugin_from_zip_archive_w.png)
 
 ## Test the VPP
 
