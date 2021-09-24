@@ -114,7 +114,7 @@ Because Simple correction uses GPS altitude which may often be less stable than 
 
 ## Contact or Support
 
-Contact author at: chuc92man@gmail.com
+Contact author at: chuc92man@gmail.com or ts18851-3009@sti.chubu.ac.jp
 
 ## Useful links
 
