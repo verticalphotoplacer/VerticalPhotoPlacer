@@ -6,12 +6,14 @@ The objective of VPP is to provide a tool for quickly geo-referencing and visual
 
 This plugin should be used in cases when quick information visualization is needed such as disaster response. If geo-referencing accuracy is top priority, more advanced tools should be considered.
 
+* [Installation](#installation)
 * [Quick start](#quick-start)
 * [Improving visualization of vertical drone photos](#improving-visualization-of-vertical-drone-photos)
    * [Home point correction](#home-point-correction)
    * [Adjacent photo matching](#adjacent-photo-matching)
    * [Simple correction](#simple-correction)
 
+## Installation
 
 The VPP is developed with Python 3 and available for QGIS version 3.x. This plugin requires the installation of GDAL, NumPy, Exiftool.
 
