@@ -32,7 +32,7 @@ Please type "Vertical Photo Placer" in the search box if it is not easily locate
 
 ![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_interface.png?raw=true)
 
-![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/install_plugin_from_zip_archive_w.png?raw=true)
+![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/install_plugin_from_zip_archive_update.png?raw=true)
 
 ## Quick Start
 The default VPP user interface requires only one input to work, which is the full path of the photos folder (See figure 1). Users could either drag and drop/or browse to the input folder. In this mode, VPP performs Quick view to geo-referencing and visualizing all vertical drone photos found in the input folder. Geo-referencing uses default parameters as available in each photo's metadata. This is done automatically.  
