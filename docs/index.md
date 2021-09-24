@@ -67,7 +67,9 @@ Similar to Home point correction, this feature also tries to estimate a photo's 
   <em><b>Figure 4. Guide to Adjacent photos matching (after sliding)</b></em>
 </p>
 
-The basis of this feature is that the home point's terrain altitude could be estimated from matching two adjacent photos (See Figure 6). When first loaded, photo 1 and photo 2 are visualized in such a way that their geometric relationship is preserved. This process uses barometer altitude. As barometer altitude is measured against home point's terrain altitude, these photos will not match each other (See Figure 5). By changing these barometer altitudes so that the photos match (See Figure 4), it is possible to estimate the home point's terrain altitude. From that, the photo's ground altitude can be estimated. 
+The basis of this feature is that the home point's terrain altitude could be estimated from matching two adjacent photos (See Figure 6). When first loaded, photo 1 and photo 2 are visualized in such a way that their geometric relationship is preserved. This process uses barometer altitude. 
+
+However, barometer altitude is measured against home point's terrain altitude, these photos will not match each other if home point is at higher or lower elevation (See Figure 5). By changing these barometer altitudes so that the photos match (this gives sliding offset, See Figure 4 and Figure 6), it is possible to estimate the home point's terrain altitude. From that, the photo's ground altitude can be estimated. 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_before.PNG?raw=true" alt="Adj_UI_beforeSliding">
@@ -76,7 +78,7 @@ The basis of this feature is that the home point's terrain altitude could be est
   <em><b>Figure 5. Guide to Adjacent photos matching (before sliding)</b></em>
 </p>
 
-Basic of adjacent photo matching:
+Substraction sliding offset from the photo's terrain altitude gives home point's terrain altitude.
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_principle.png?raw=true" alt="Adj_Principle">
