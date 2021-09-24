@@ -112,10 +112,6 @@ Because Simple correction uses GPS altitude which may often be less stable than 
 * It is difficult to remember the homepoint location.
 * The GPS accuracy is so low that it is difficult to match adjacent photos.
 
-## Contact or Support
-
-Contact author at: chuc92man@gmail.com or ts18851-3009@sti.chubu.ac.jp
-
 ## Useful links
 
 * [Plugin github](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin)
