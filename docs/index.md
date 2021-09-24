@@ -7,7 +7,7 @@ The objective of VPP is to provide a tool for quickly geo-referencing and visual
 This plugin should be used in cases when quick information visualization is needed such as disaster response. If geo-referencing accuracy is top priority, more advanced tools should be considered.
 
 * [Installation](#installation)
-   * [Install from QGIS Manage and Install Plugins Interface](#install-from-qgis-manage-and-install-plugins-interface)
+   * [Install from QGIS official plugin repository](#install-from-qgis-official-plugin-repository)
    * [Install from source](#install-from-source)
 * [Quick start](#quick-start)
 * [Improving visualization of vertical drone photos](#improving-visualization-of-vertical-drone-photos)
@@ -17,9 +17,14 @@ This plugin should be used in cases when quick information visualization is need
 
 ## Installation
 
-The VPP is developed with Python 3 and available for QGIS version 3.x. This plugin requires the installation of GDAL, NumPy, Exiftool.
+The VPP is developed with Python 3 and available for QGIS version 3.x. This plugin requires the installation of GDAL, NumPy, ExifTool.
+GDAL and NumPy are normally included in QGIS already. [ExifTool](https://exiftool.org/) is an external library for reading and writing metadata in photos. VPP uses ExifTool to access drone photo's metadata tags. 
 
-### Install from QGIS Manage and Install Plugins Interface
+A version of ExifTool is already included in the [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool). If [Install from source](#install-from-source) is chosen, the included version could be used. No additional download is required. 
+
+If VPP is to be installed from QGIS official plugin repository, user needs to download ExifTool and put it into [VPP's tool folder](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool) following the folder structure as is.
+
+### Install from QGIS official plugin repository
 
 The easiest way to install VPP is through QGIS's Manage and Install Plugins Interface.
 
@@ -32,12 +37,12 @@ Please type "Vertical Photo Placer" in the search box if it is not easily locate
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_interface.png?raw=true" alt="Quickview_Guide">
   <br>
   <br>
-  <em><b>Figure 1. Guide to Quick view</b></em>
+  <em><b>Figure 1. Open QGIS's Manage and Install Plugins Interface</b></em>
 </p>
 
 ### Install from source
 
-QGIS also allows to install plugin from zip file. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file name "<b>vertical-photo-placer.zip</b>" (See Figure 1). 
+QGIS also allows to install plugin from zip file. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file name "<b>vertical_photo_placer.zip</b>" (See Figure 1). 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/install_plugin_from_zip_archive_update.png?raw=true" alt="Install plugin from zip">
