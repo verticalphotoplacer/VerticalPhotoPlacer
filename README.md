@@ -10,7 +10,7 @@ This plugin should be used in cases when quick information visualization is need
 
 ## Plugin installation
 
-The VPP is developed with Python 3 and available for QGIS version 3.x. This plugin requires the installation of GDAL, NumPy.
+The VPP is developed with Python 3 and available for QGIS version 3.x. This plugin requires the installation of GDAL, NumPy, Exiftool.
 
 The easiest way to install VPP is through QGIS's Manage and Install Plugins Interface.
 
