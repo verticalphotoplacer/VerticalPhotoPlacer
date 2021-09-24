@@ -36,7 +36,7 @@ Although GPS altitude is less stable than barometer altitude, it is still useful
 
 ### Home point correction
 
-This feature tries to estimate photo's ground altitude from home point's terrain altitude. It asks user to locate the home point. Required inputs are photos input folder, a DEM file and location of the home point (See Figure 2). In the correction method, please select "Home point correction". DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
+This feature tries to estimate photo's ground altitude from home point's terrain altitude. It asks user to locate the home point. Required inputs are photos input folder, a DEM file and location of the home point (See Figure 2). In the correction method, please select <em><b>Home point correction</b></em>. DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/HomepointUI.PNG?raw=true" alt="Homepoing_Guide">
@@ -58,7 +58,7 @@ As user is expected to provide location of the home point, it may be difficult i
 
 ### Adjacent photo matching
 
-Similar to Home point correction, this feature also tries to estimate photo's ground altitude from home point's terrain altitude. However, the way to estimate is different. Required inputs are photos input folder, a DEM file and location of the home point (See Figure 4). In the correction method, please select "Adjacent photo matching". DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
+Similar to Home point correction, this feature also tries to estimate photo's ground altitude from home point's terrain altitude. However, the way to estimate is different. Required inputs are photos input folder, a DEM file and location of the home point (See Figure 4). In the correction method, please select <em><b>Adjacent photo matching</b></em>. DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_after.PNG?raw=true" alt="Adj_UI_afterSliding">
@@ -67,12 +67,16 @@ Similar to Home point correction, this feature also tries to estimate photo's gr
   <em><b>Figure 4. Guide to Adjacent photos matching (after sliding)</b></em>
 </p>
 
+The basic of this feature is that home point's terrain altitude could be estimated from matching two adjacent photos (See Figure 6). When first loaded, photo 1 and photo 2 are visualized in such a way that their geometric relationship is preserved. This process uses barometer altitude. As barometer altitude is measured against home point's terrain altitude, these photos will not match each other (See Figure 5). By changing these barometer altitude so that the photos matches, it is possible to estimate the home point's terrain altitude. From that, photo's ground altitude can be estimated. 
+
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_before.PNG?raw=true" alt="Adj_UI_beforeSliding">
   <br>
   <br>
   <em><b>Figure 5. Guide to Adjacent photos matching (before sliding)</b></em>
 </p>
+
+Basic of adjacent photo matching:
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/adj_principle.png?raw=true" alt="Adj_Principle">
@@ -83,7 +87,7 @@ Similar to Home point correction, this feature also tries to estimate photo's gr
 
 ### Simple correction
 
-This feature tries to estimate photo's ground altitude from GPS altitude. Required inputs are photos input folder and a DEM file (See Figure 7). In the correction method, please select "Simple correction". DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). This is similar to the previous barometer-based altitude correction.   
+This feature tries to estimate photo's ground altitude from GPS altitude. Required inputs are photos input folder and a DEM file (See Figure 7). In the correction method, please select <em><b>Simple correction</b></em>. DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). This is similar to the previous barometer-based altitude correction.   
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/SimpleUI.PNG?raw=true" alt="SimpleCorr_Guide">
