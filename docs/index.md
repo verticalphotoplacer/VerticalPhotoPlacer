@@ -79,7 +79,7 @@ The basis of this feature is that the home point's terrain altitude could be est
 Basic of adjacent photo matching:
 
 <p align="center">
-  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/adj_principle.png?raw=true" alt="Adj_Principle">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_principle.png?raw=true" alt="Adj_Principle">
   <br>
   <br>
   <em><b>Figure 6. Background of estimation of photo's ground altitude by matching two adjacent photos</b></em>
