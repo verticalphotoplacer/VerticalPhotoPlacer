@@ -6,7 +6,7 @@ version=0.1
 author=Man Duc Chuc
 email=chuc92man@gmail.com
 
-about=Developed by at Chubu University, the Vertical Photo Placer (VPP) plugin allows quick geo-referencing and visualizing of vertical drone photos on map, which is intended to be used in emergency response.
+about=Developed at Chubu University, the Vertical Photo Placer (VPP) plugin allows quick geo-referencing and visualizing of vertical drone photos on map, which is intended to be used in emergency response.
 
 tracker=https://github.com/verticalphotoplacer/VerticalPhotoPlacer/issues
 repository=https://github.com/verticalphotoplacer/VerticalPhotoPlacer
