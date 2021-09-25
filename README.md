@@ -36,6 +36,3 @@ This plugin is distributed under a GNU General Public License version 3.
 
 ## How to cite 
 Coming soon!
-
-## Code on Zenodo
-Coming soon!
