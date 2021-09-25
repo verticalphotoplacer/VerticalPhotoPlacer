@@ -8,7 +8,7 @@ This plugin should be used in cases when quick information visualization is need
 
 * [Installation](#installation)
    * [Install from QGIS official plugin repository](#install-from-qgis-official-plugin-repository)
-   * [Install from source](#install-from-source)
+   * [Install from ZIP file](#install-from-zip-file)
 * [Quick start](#quick-start)
 * [Improving visualization of vertical drone photos](#improving-visualization-of-vertical-drone-photos)
    * [Home point correction](#home-point-correction)
@@ -40,7 +40,7 @@ Please type "Vertical Photo Placer" in the search box if it is not easily locate
   <em><b>Figure 1. Open QGIS's Manage and Install Plugins Interface</b></em>
 </p>
 
-### Install from source
+### Install from ZIP file
 
 QGIS also allows to install plugin from zip file. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file name "<b>vertical_photo_placer.zip</b>" (See Figure 1). 
 
