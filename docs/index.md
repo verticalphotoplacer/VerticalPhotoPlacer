@@ -60,13 +60,6 @@ This file is not ready for installation yet as the filename has to be "<b>vertic
   <em><b>Figure 1. Create a zip file with name "vertical_photo_placer.zip"</b></em>
 </p>
 
-<p align="center">
-  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/zip_howto.png?raw=true" alt="Select zip as output file">
-  <br>
-  <br>
-  <em><b>Figure 1. Select <em>zip</em> to create .zip compress file</b></em>
-</p>
-
 Then, in the QGIS Manage and Install Plugins Interface, select tab "Install from ZIP" and install VPP from the downloaded zip file (See Figure 2).
 QGIS may raise a warning as <em><b>"Security warning: installing a plugin from an untrusted source can lead to data loss and/or leak. Continue?"</b></em>. Press <b>Yes</b> to continue.
 
