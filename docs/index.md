@@ -26,7 +26,7 @@ If VPP is to be installed from QGIS official plugin repository, user needs to do
 
 ### Install from QGIS official plugin repository
 
-The easiest way to install VPP is through QGIS's Manage and Install Plugins Interface.
+The easiest way to install VPP is through QGIS Manage and Install Plugins Interface.
 
 First, install QGIS 3.x if it is not installed yet. Please download and install following this [guide](https://qgis.org/en/site/forusers/download.html).
 
@@ -37,12 +37,12 @@ Please type "Vertical Photo Placer" in the search box if it is not easily locate
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_interface.png?raw=true" alt="Quickview_Guide">
   <br>
   <br>
-  <em><b>Figure 1. Open QGIS's Manage and Install Plugins Interface</b></em>
+  <em><b>Figure 1. Open QGIS Manage and Install Plugins Interface</b></em>
 </p>
 
 ### Install from ZIP file
 
-QGIS also allows to install plugin from zip file. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file with name "<b>vertical_photo_placer.zip</b>". VPP can be downloaded as a zip file from [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer) (See Figure 1). This will create a zip file named <b>"VerticalPhotoPlacer-master.zip"</b>. 
+It is also possible in QGIS to install plugins from zip files. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file with the name "<b>vertical_photo_placer.zip</b>". VPP can be downloaded as a zip file from [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer) (See Figure 1). This will create a zip file named <b>"VerticalPhotoPlacer-master.zip"</b>. 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/download_zip.png?raw=true" alt="Download VPP as a zip file from Github">
