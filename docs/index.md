@@ -24,22 +24,6 @@ A version of ExifTool is already included in the [VPP Github](https://github.com
 
 If VPP is to be installed from QGIS official plugin repository, users need to download ExifTool and put it into [VPP's tool folder](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool) following the folder structure as is.
 
-### Install from QGIS official plugin repository
-
-The easiest way to install VPP is through QGIS Manage and Install Plugins Interface.
-
-First, install QGIS 3.x if it is not installed yet. Please download and install following this [guide](https://qgis.org/en/site/forusers/download.html).
-
-Then, open the QGIS application and install this plugin by following this [guide (sections 9.1.1 and 9.1.2)](https://docs.qgis.org/3.16/en/docs/training_manual/qgis_plugins/fetching_plugins.html). 
-Please type "Vertical Photo Placer" in the search box if it is not easily located.
-
-<p align="center">
-  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_interface.png?raw=true" alt="Quickview_Guide">
-  <br>
-  <br>
-  <em><b>Figure 1. Open QGIS Manage and Install Plugins Interface</b></em>
-</p>
-
 ### Install from ZIP file
 
 It is also possible in QGIS to install plugins from zip files. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file with the name "<b>vertical_photo_placer.zip</b>". VPP can be downloaded as a zip file from [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer) (See Figure 1). This will create a zip file named <b>"VerticalPhotoPlacer-master.zip"</b>. This zip file puts all source code inside a top level folder with the same name <b>"VerticalPhotoPlacer-master"</b>
