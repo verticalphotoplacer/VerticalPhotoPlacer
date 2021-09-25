@@ -20,7 +20,7 @@ Please follow this [tutorial](https://verticalphotoplacer.github.io/VerticalPhot
 
 ## Contributing
 
-If you find some issue that you are willing to fix, code contributions are welcome. Please read [the development notes](DEVELOPMENT.md) before contributing. 
+If you find some issue that you are willing to fix, code contributions are welcome. 
 
 ## Author
 
