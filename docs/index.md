@@ -55,7 +55,7 @@ Then, in the QGIS Manage and Install Plugins Interface, select tab "Install from
 QGIS may raise a warning as <em><b>"Security warning: installing a plugin from an untrusted source can lead to data loss and/or leak. Continue?"</b></em>. Press <b>Yes</b> to continue.
 
 <p align="center">
-  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/install_plugin_from_zip_archive.png?raw=true" alt="Install plugin from zip">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/install_plugin_from_zip_archive_update.png?raw=true" alt="Install plugin from zip">
   <br>
   <br>
   <em><b>Figure 1. Install VPP plugin from zip file</b></em>
