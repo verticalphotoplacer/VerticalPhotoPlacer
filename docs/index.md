@@ -163,6 +163,6 @@ Because Simple correction uses GPS altitude which may often be less stable than 
 
 ## Useful links
 
-* [Plugin github](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin)
-* [User guide page](https://verticalphotoplacer.github.io/VerticalPhotoPlacerPlugin/)
+* [Plugin github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer)
+* [User guide page](https://verticalphotoplacer.github.io/VerticalPhotoPlacer/)
 * [QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/)
