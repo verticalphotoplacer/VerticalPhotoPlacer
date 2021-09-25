@@ -22,7 +22,7 @@ GDAL and NumPy are normally included in QGIS already. [ExifTool](https://exiftoo
 
 A version of ExifTool is already included in the [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool). If [Install from ZIP file](#install-from-zip-file) is chosen, the included version could be used. No additional download is required. 
 
-If VPP is to be installed from QGIS official plugin repository, user needs to download ExifTool and put it into [VPP's tool folder](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool) following the folder structure as is.
+If VPP is to be installed from QGIS official plugin repository, users need to download ExifTool and put it into [VPP's tool folder](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool) following the folder structure as is.
 
 ### Install from QGIS official plugin repository
 
