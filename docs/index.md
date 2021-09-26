@@ -140,8 +140,9 @@ Similar to Home point correction, this feature also tries to estimate a photo's 
   <em><b>Figure 11. Guide to Adjacent photos matching (after sliding)</b></em>
 </p>
 
-The basis of this feature is that the home point's terrain altitude could be estimated from matching two adjacent photos (See Figure 13). When first loaded, photo 1 and photo 2 are visualized in such a way that their geometric relationship is preserved. This process uses barometer altitude. 
+The basis of this feature is that the home point's terrain altitude could be estimated from matching two adjacent photos (See Figure 13). 
 
+When first loaded, photo 1 and photo 2 are visualized in such a way that their geometric relationship is preserved. This process uses barometer altitude. 
 However, barometer altitude is measured against home point's terrain altitude, these photos will not match each other if home point is at higher or lower elevation (See Figure 12). By changing these barometer altitudes so that the photos match (this gives the sliding offset, See Figure 11 and Figure 13), it is possible to estimate the home point's terrain altitude. From that, the photo's ground altitude can be estimated. 
 
 <p align="center">
