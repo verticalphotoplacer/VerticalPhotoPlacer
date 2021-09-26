@@ -23,9 +23,9 @@ This plugin should be used in cases when quick information visualization is need
 The VPP is developed with Python 3 and available for QGIS version 3.x (QGIS 3.2.3-Bonn is used in making of this guide). This plugin requires the installation of GDAL, NumPy, ExifTool.
 GDAL and NumPy are normally included in QGIS already. [ExifTool](https://exiftool.org/) is an external library for reading and writing metadata in photos. VPP uses ExifTool to access drone photo's metadata tags. 
 
-To install ExifTool, download from the [official website](https://exiftool.org/) the suitable version (Windows or Linux/MacOS). The downloaded file is a compressed file (.zip on Windows and .tar.gz in Linux/MacOS). Note that the Linux version can be used in MacOS also, and is the tested version. Then, extract the file to a folder (see Figure 1). The folder name is free to choose. 
+To install ExifTool, download from the [official website](https://exiftool.org/) the suitable version to your machine (Windows or Linux/MacOS). Note that the Linux version can be used in both Linux and MacOS machines. The downloaded file is a compressed <b>.zip</b> file on Windows, or <b>.tar.gz</b> in Linux/MacOS. Then, extract the file to a folder (see Figure 1). It is free to choose the folder path. 
 
-One more thing is a "<b>.ExifTool_config</b>" file is required. This file can be downloaded from the [VPP's tool folder](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool). Please download and insert it to the ExifTool folder (see Figure 1).
+In addition, a "<b>.ExifTool_config</b>" file is required. This file can be downloaded from the [VPP's tool folder](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool). Please download and insert it to your ExifTool folder (see Figure 1).
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/exiftool_folderstructure.png?raw=true" alt="ExifTool folder structure">
@@ -34,7 +34,7 @@ One more thing is a "<b>.ExifTool_config</b>" file is required. This file can be
   <em><b>Figure 1. Folder structure of ExifTool in Windows (above) and Linux/MacOS (below)</b></em>
 </p>
 
-Finally, this folder should be added to the QGIS's PATH environment variable. Please follow these steps in Figure 2. 
+Finally, this folder needs to be added to the QGIS's PATH environment variable. Please follow these steps in Figure 2. 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/insert_path_var_exiftool.png?raw=true" alt="ExifTool folder structure">
