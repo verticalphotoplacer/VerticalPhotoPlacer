@@ -121,7 +121,7 @@ As the user is expected to provide location of the home point, it may be difficu
 
 ### Adjacent photo matching
 
-Similar to Home point correction, this feature also tries to estimate a photo's ground altitude from home point's terrain altitude. However, the way to estimate is different. Required inputs are photos input folder, a DEM file and location of the home point (See Figure 10). In the correction method, please select <em><b>Adjacent photo matching</b></em>. The DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
+Similar to Home point correction, this feature also tries to estimate a photo's ground altitude from home point's terrain altitude. However, the way to estimate is different. Required inputs are photos input folder and sliding offset resulting from photos matching (See Figure 10). In the correction method, please select <em><b>Adjacent photo matching</b></em>. DEM is optional but recommended. The DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_after.PNG?raw=true" alt="Adj_UI_afterSliding">
