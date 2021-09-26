@@ -30,6 +30,7 @@
 """
 from os import listdir
 from os.path import isfile, join, exists, realpath, dirname, splitext
+import shutil
 from osgeo import gdal
 import math
 
@@ -93,19 +94,13 @@ def getGroundsize(iw, ih, sw, sh, fl, altitude):
     ground_pixel_length = sensor_pixel_length * scale_factor
     
     return ground_pixel_width, ground_pixel_length
-    
 
-def resolveTool(name, systemid=0):
-    """Find fullpath of a tool based on its name."""
-    basepath = join(dirname(dirname(realpath(__file__))), "tool")
-    # if system is win -> add win folder
-    if systemid == 0:
-        basepath = join(basepath, "win")
-    # else, add linux folder
-    else:
-        basepath = join(basepath, "linux")
-        
-    return join(basepath, name)
+
+def resolveTool(prog):
+    tool = shutil.which(prog)
+    if not tool:
+        raise Exception(f'Cannot find {prog}, make sure to add {prog} to the system path variable.')
+    return tool
 
 
 def resolveFile(name):

@@ -74,7 +74,6 @@ class CountTasks(Enum):
     SIMPLE = 3
 
 
-# error dialogs
 def showDialog(window_title, dialog_text, icon_level):
     dialog = QMessageBox()
     dialog.setSizeGripEnabled(True)
@@ -313,7 +312,7 @@ class VerticalPhotoPlacer:
         folder = QFileDialog.getExistingDirectory(self.dlg, "Select folder ")
         # if user do not select any folder, then don't change folder_name
         if len(folder) > 1:
-            self.dlg.alt_intext.setText(folder)
+            self.dlg.input_folder.setText(folder)
 
     def onDEMChange(self):
         self.dem_path = self.dlg.input_dem.text()

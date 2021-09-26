@@ -89,15 +89,12 @@ except NameError:
 
 # prevent window popup from displaying
 startupinfo = None
-platform_id = 0
 if platform.startswith("win"):
     startupinfo = subprocess.STARTUPINFO()
     startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
-else:
-    platform_id = 1
 
 # initialize exiftool executable path
-executable = resolveTool("exiftool", platform_id)
+executable = resolveTool("exiftool")
 
 """The name of the executable to run.
 If the executable is not located in one of the paths listed in the
