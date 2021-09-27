@@ -45,6 +45,10 @@ Finally, this folder needs to be added to the QGIS's PATH environment variable. 
 
 Please restart QGIS to apply these changes.
 
+### Install from QGIS official plugin repository
+
+
+
 ### Install from ZIP file
 
 It is also possible in QGIS to install plugins from zip files. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file with the name "<b>vertical_photo_placer.zip</b>". VPP can be downloaded as a zip file from [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer) (See Figure 4). This will create a zip file named <b>"VerticalPhotoPlacer-master.zip"</b>. This zip file puts all source code inside a top level folder with the same name <b>"VerticalPhotoPlacer-master"</b>
