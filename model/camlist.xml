@@ -149,4 +149,9 @@
     <width>17.3</width>
     <height>13</height>
   </model>
+  <model>
+    <name>fc3411</name>
+    <width>13.2</width>
+    <height>8.8</height>
+  </model>
 </camlist>
