@@ -47,7 +47,7 @@ Please restart QGIS to apply these changes.
 
 ### Install from QGIS official plugin repository
 
-
+To be updated.
 
 ### Install from ZIP file
 
