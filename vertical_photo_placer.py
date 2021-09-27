@@ -333,7 +333,7 @@ class VerticalPhotoPlacer:
     def onSelectAdjacentPhotos(self):
         """Visualize two photos to the plugin UI so that geometric relationship of the photos are preserved."""
 
-        filename, _filter = QFileDialog.getOpenFileNames(self.dlg, "Select two overlapped photos ", self.img_folder, '*.jpg')
+        filename, _filter = QFileDialog.getOpenFileNames(self.dlg, "Select two overlapped photos ", self.img_folder, '*.jpg') # this should be a global variable 
         self.dlg.progress_bar.setValue(0)
 
         if len(filename) == 2:
