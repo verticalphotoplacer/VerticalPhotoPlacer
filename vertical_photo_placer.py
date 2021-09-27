@@ -344,11 +344,8 @@ class VerticalPhotoPlacer:
             try:
                 specs = ProcessMetadata(self.overlap_imgs).getTagsAllImgs()
 
-                pix1 = QPixmap(self.overlap_imgs[0]).scaled(DISPLAY_RES, DISPLAY_RES, Qt.KeepAspectRatio)
-                pix2 = QPixmap(self.overlap_imgs[1]).scaled(DISPLAY_RES, DISPLAY_RES, Qt.KeepAspectRatio)
-
-                self.adj_item1 = PixmapItem(pix1)
-                self.adj_item2 = PixmapItem(pix2)
+                self.adj_item1 = PixmapItem(QPixmap(self.overlap_imgs[0]).scaled(DISPLAY_RES, DISPLAY_RES, Qt.KeepAspectRatio))
+                self.adj_item2 = PixmapItem(QPixmap(self.overlap_imgs[1]).scaled(DISPLAY_RES, DISPLAY_RES, Qt.KeepAspectRatio))
 
                 self.adj_item1.setTransformOriginPoint(pix1.rect().center())
                 self.adj_item2.setTransformOriginPoint(pix2.rect().center())
