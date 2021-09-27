@@ -57,7 +57,7 @@ class ProcessCamera:
 
         try:
             for x in self.root.findall("model"):
-                if model.lower() in x.find("name").text.lower():
+                if model.lower() == x.find("name").text.lower():
                     width = float(x.find("width").text) / 1000  # original width is in milimeter
                     height = float(x.find("height").text) / 1000  # original height is in milimeter
                     return width, height
