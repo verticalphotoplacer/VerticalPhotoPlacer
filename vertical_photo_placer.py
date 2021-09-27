@@ -780,6 +780,7 @@ class VerticalPhotoPlacer:
 
         if exception is None:
             VerticalPhotoPlacer.removeDupLayers(result["files"])
+            self.loadBasemap()
             self.loadLayers(result["files"])
         else:
             self.iface.messageBar().pushMessage("Notice", str(exception), level=Qgis.Info, duration=5)
@@ -814,21 +815,28 @@ class VerticalPhotoPlacer:
                                                 level=Qgis.Info,
                                                 duration=3)
         else:
-            self.loadBasemap()
-            first_img = None
-            count = 0
-            for img in images:
-                status = self.loadGeotagImage(img)
-                if status:
-                    self.iface.messageBar().clearWidgets()
-                    count = count + 1
-                    if first_img is None:
-                        first_img = img
+            # To prevent QGIS from raising Coordinate Reference System Selector popup
+            s = QSettings()
+            default_value = s.value("/Projections/defaultBehaviour")
+            try:
+                s.setValue("/Projections/defaultBehaviour", "useProject")
 
-            self.zoomLayer(first_img)
-            self.iface.messageBar().pushMessage("Success", "Loaded {0} photos".format(count),
-                                                level=Qgis.Success,
-                                                duration=3)
+                first_img = None
+                count = 0
+                for img in images:
+                    status = self.loadGeotagImage(img)
+                    if status:
+                        self.iface.messageBar().clearWidgets()
+                        count = count + 1
+                        if first_img is None:
+                            first_img = img
+
+                self.zoomLayer(first_img)
+                self.iface.messageBar().pushMessage("Success", "Loaded {0} photos".format(count),
+                                                    level=Qgis.Success,
+                                                    duration=3)
+            finally:
+                s.setValue("/Projections/defaultBehaviour", default_value)
 
     def loadBasemap(self):
         """Load a basemap if not loaded yet, Google Satellite >> OSM"""
