@@ -24,4 +24,9 @@
     <width>6.3</width>
     <height>4.7</height>
   </model>
+  <model>
+    <name>fc3170</name>
+    <width>6.3</width>
+    <height>4.7</height>
+  </model>
 </camlist>
