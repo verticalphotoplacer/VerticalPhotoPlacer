@@ -97,19 +97,6 @@ class ImageMetaStore:
     def cam_model(self):
         return self._cam_model
 
-    # def __repr__(self):
-    #     return f'ImageMetaStore instance: \n' \
-    #            f'Image width: {self._image_width}\n' \
-    #            f'Image height: {self._image_height}\n' \
-    #            f'Camera focal length: {self._focal_length}\n' \
-    #            f'GPS Latitude: {self._gpslat}\n' \
-    #            f'GPS Longitude: {self._gpslon}\n' \
-    #            f'GPS Altitude: {self._gpsalt}\n' \
-    #            f'Barometer Altitude: {self._baroalt}\n' \
-    #            f'Ground Altitude: {self._groundalt}\n' \
-    #            f'Heading angle: {self._heading}\n' \
-    #            f'Camera model: {self._cam_model}'
-
 
 class ProcessMetadata:
     def __init__(self, photos):
@@ -204,22 +191,3 @@ class ProcessMetadata:
         """
         imgsmeta = [self.getTagsByImgindex(i) for i in range(len(self.metadata))]
         return imgsmeta
-
-    #proobj = ProcessMetadata(files)
-    #imgsmeta = [proobj.getTagsByImgindex(i) for i in range(len(files))]
-
-# import time
-# start = time.time()
-# dirname = "D:/Research/Oblique Photo Browser/Releases/JPEG/"
-#dirname = "D:/Research/Oblique Photo Browser/Releases/testdata/FL_2.2019_01_17.08_58/"
-#from utility import getPhotos
-#imgs = getPhotos(dirname, (".jpg"))
-#print(len(imgs))
-#d = ProcessMetadata(imgs)
-#print(len(d.metadata))
-# end = time.time()
-# print(end - start)
-#d = ProcessMetadata(['D:/Research/Oblique Photo Browser/Releases/DroneMapper_Gregg1_2/test/DJI_0001.JPG'])
-#d = ProcessMetadata(['D:/Research/Oblique Photo Browser/Releases/testdata/DJI_0001.JPG'])
-#img = d.getTagsByImgindex(0)
-#(img)

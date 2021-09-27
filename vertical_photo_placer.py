@@ -839,6 +839,8 @@ class VerticalPhotoPlacer:
                 self.iface.messageBar().pushMessage("Success", "Loaded {0} photos".format(count),
                                                     level=Qgis.Success,
                                                     duration=3)
+            except Exception:
+                raise
             finally:
                 s.setValue("/Projections/defaultBehaviour", default_value)
 
