@@ -67,6 +67,10 @@ BASEOSM = 'type=xyz&url=http://a.tile.openstreetmap.org/%7Bz%7D/%7Bx%7D/%7By%7D.
 BASEGOOGLE = 'type=xyz&url=http://www.google.cn/maps/vt?lyrs%3Ds@189%26gl%3Dcn%26x%3D%7Bx%7D%26y%3D%7By%7D%26z%3D%7Bz%7D&zmax=18&zmin=0&crs=EPSG3857'
 
 
+class InvalidRasterLayer(Exception):
+    pass
+
+
 class CountTasks(Enum):
     QUICKVIEW = 2
     HOMEPOINT = 3
@@ -865,17 +869,21 @@ class VerticalPhotoPlacer:
         :rtype: int
         """
 
-        rt = QgsRasterTransparency()
-        rt.initializeTransparentPixelList(0, 0, 0)
-        file_info = QFileInfo(imgname)
-        fbasename = file_info.baseName()
-        rlayer = self.iface.addRasterLayer(imgname, fbasename)
-        crs = rlayer.crs()
-        crs.createFromId(4326)
-        rlayer.setCrs(crs)
-        rlayer.renderer().setRasterTransparency(rt)
+        try:
+            rt = QgsRasterTransparency()
+            rt.initializeTransparentPixelList(0, 0, 0)
+            file_info = QFileInfo(imgname)
+            fbasename = file_info.baseName()
+            rlayer = self.iface.addRasterLayer(imgname, fbasename)
+            crs = rlayer.crs()
+            crs.createFromId(4326)
+            rlayer.setCrs(crs)
+            rlayer.renderer().setRasterTransparency(rt)
 
-        if not rlayer.isValid():
+            if not rlayer.isValid():
+                raise InvalidRasterLayer("Cannot load {0}.".format(imgname))
+
+        except Exception:
             self.iface.messageBar().pushMessage("Notice",
                                                 "ERROR: Photo {0} failed to load".format(imgname),
                                                 level=Qgis.Info,
