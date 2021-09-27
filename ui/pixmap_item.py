@@ -34,21 +34,9 @@ class PixmapItem(QGraphicsPixmapItem):
     def __init__(self, pixmap, parent=None):
         super().__init__(pixmap, parent)
         self.setAcceptHoverEvents(True)
-        #self._is_hovered = True
-
-    # def hoverEnterEvent(self, event):
-    #     self._is_hovered = True
-    #     self.update()
-    #     super().hoverEnterEvent(event)
-
-    # def hoverLeaveEvent(self, event):
-    #     self._is_hovered = False
-    #     self.update()
-    #     super().hoverLeaveEvent(event)
 
     def paint(self, painter, option, widget=None):
         super().paint(painter, option, widget)
-        #if self._is_hovered:
         painter.save()
         pen = QPen(QColor("red"))
         pen.setWidth(1)
