@@ -56,8 +56,8 @@ def refConversion(coor, direction):
     if direction in direction_mult:
         return coor*direction_mult[direction]
     else:
-        raise ReferenceDirectionTextNotFound(f"Expected coordinate reference to be in {direction_mult.keys()}, \n"
-                                             f"but found '{direction}' instead.")
+        raise ReferenceDirectionTextNotFound("Expected coordinate reference to be in {0}, "
+                                             "but found '{1}' instead.".format(direction_mult.keys(), direction))
 
 
 def getWorldfileExistPhotos(photos, world_ext):
@@ -99,7 +99,7 @@ def getGroundsize(iw, ih, sw, sh, fl, altitude):
 def resolveTool(prog):
     tool = shutil.which(prog)
     if not tool:
-        raise Exception(f'Cannot find {prog}, make sure to add {prog} to the system path variable.')
+        raise Exception('Cannot find {0}, make sure to add {1} to the system path variable.'.format(prog, prog))
     return tool
 
 

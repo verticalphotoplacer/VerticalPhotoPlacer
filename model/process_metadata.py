@@ -97,18 +97,18 @@ class ImageMetaStore:
     def cam_model(self):
         return self._cam_model
 
-    def __repr__(self):
-        return f'ImageMetaStore instance: \n' \
-               f'Image width: {self._image_width}\n' \
-               f'Image height: {self._image_height}\n' \
-               f'Camera focal length: {self._focal_length}\n' \
-               f'GPS Latitude: {self._gpslat}\n' \
-               f'GPS Longitude: {self._gpslon}\n' \
-               f'GPS Altitude: {self._gpsalt}\n' \
-               f'Barometer Altitude: {self._baroalt}\n' \
-               f'Ground Altitude: {self._groundalt}\n' \
-               f'Heading angle: {self._heading}\n' \
-               f'Camera model: {self._cam_model}'
+    # def __repr__(self):
+    #     return f'ImageMetaStore instance: \n' \
+    #            f'Image width: {self._image_width}\n' \
+    #            f'Image height: {self._image_height}\n' \
+    #            f'Camera focal length: {self._focal_length}\n' \
+    #            f'GPS Latitude: {self._gpslat}\n' \
+    #            f'GPS Longitude: {self._gpslon}\n' \
+    #            f'GPS Altitude: {self._gpsalt}\n' \
+    #            f'Barometer Altitude: {self._baroalt}\n' \
+    #            f'Ground Altitude: {self._groundalt}\n' \
+    #            f'Heading angle: {self._heading}\n' \
+    #            f'Camera model: {self._cam_model}'
 
 
 class ProcessMetadata:

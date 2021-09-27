@@ -61,8 +61,9 @@ class ProcessCamera:
                     width = float(x.find("width").text) / 1000  # original width is in milimeter
                     height = float(x.find("height").text) / 1000  # original height is in milimeter
                     return width, height
-            raise CameraModelNotFound(f'Camera model not found for: {model.lower()}. \n'
-                                      f'Please inserts the model name, sensor width and height to camlist.xml.')
+            raise CameraModelNotFound('Camera model not found for: {0}. '
+                                      'Please inserts the model name, sensor width and height to camlist.xml.'.
+                                      format(model.lower()))
         except Exception:
             raise
 
