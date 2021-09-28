@@ -171,7 +171,7 @@ class VerticalPhotoPlacer:
         self.progress_track = None
 
         # supported file extensions
-        self.img_exts = (".jpg")
+        self.img_exts = ".jpg"
         self.world_ext = ".jgw"
 
     # noinspection PyMethodMayBeStatic
@@ -333,7 +333,9 @@ class VerticalPhotoPlacer:
     def onSelectAdjacentPhotos(self):
         """Visualize two photos to the plugin UI so that geometric relationship of the photos are preserved."""
 
-        filename, _filter = QFileDialog.getOpenFileNames(self.dlg, "Select two overlapped photos ", self.img_folder, '*.jpg') # this should be a global variable 
+        filename, _filter = QFileDialog.getOpenFileNames(self.dlg, "Select two overlapped photos ",
+                                                         self.img_folder,
+                                                         "*{0}".format(self.img_exts))
         self.dlg.progress_bar.setValue(0)
 
         if len(filename) == 2:
@@ -344,8 +346,11 @@ class VerticalPhotoPlacer:
             try:
                 specs = ProcessMetadata(self.overlap_imgs).getTagsAllImgs()
 
-                self.adj_item1 = PixmapItem(QPixmap(self.overlap_imgs[0]).scaled(DISPLAY_RES, DISPLAY_RES, Qt.KeepAspectRatio))
-                self.adj_item2 = PixmapItem(QPixmap(self.overlap_imgs[1]).scaled(DISPLAY_RES, DISPLAY_RES, Qt.KeepAspectRatio))
+                pix1 = QPixmap(self.overlap_imgs[0]).scaled(DISPLAY_RES, DISPLAY_RES, Qt.KeepAspectRatio)
+                pix2 = QPixmap(self.overlap_imgs[1]).scaled(DISPLAY_RES, DISPLAY_RES, Qt.KeepAspectRatio)
+
+                self.adj_item1 = PixmapItem(pix1)
+                self.adj_item2 = PixmapItem(pix2)
 
                 self.adj_item1.setTransformOriginPoint(pix1.rect().center())
                 self.adj_item2.setTransformOriginPoint(pix2.rect().center())
@@ -593,7 +598,7 @@ class VerticalPhotoPlacer:
                                              on_finished=callback,
                                              flags=QgsTask.CanCancel)
         self.alt_task.progressChanged.connect(lambda: self.dlg.progress_bar.setValue(
-            start_progress + self.alt_task.progress()/self.workflow_ntasks))
+            int(start_progress + self.alt_task.progress()/self.workflow_ntasks)))
         QgsApplication.taskManager().addTask(self.alt_task)
 
     def quickView(self, photos):
@@ -628,7 +633,7 @@ class VerticalPhotoPlacer:
                                                      params=[files, imgsmeta, self.dem_path],
                                                      on_finished=self.createWorldfile)
                 self.alt_task.progressChanged.connect(lambda: self.dlg.progress_bar.setValue(
-                    start_progress + self.alt_task.progress() / self.workflow_ntasks))
+                    int(start_progress + self.alt_task.progress() / self.workflow_ntasks)))
                 QgsApplication.taskManager().addTask(self.alt_task)
 
         # start from loading photos metadata
@@ -669,7 +674,7 @@ class VerticalPhotoPlacer:
                                                      params=[self.homepoint_alt, files, imgsmeta, self.dem_path],
                                                      on_finished=self.createWorldfile)
                 self.alt_task.progressChanged.connect(lambda: self.dlg.progress_bar.setValue(
-                    start_progress + self.alt_task.progress() / self.workflow_ntasks))
+                    int(start_progress + self.alt_task.progress() / self.workflow_ntasks)))
                 QgsApplication.taskManager().addTask(self.alt_task)
 
         # start from loading photos metadata
@@ -718,7 +723,7 @@ class VerticalPhotoPlacer:
                                                              self.dem_path],
                                                      on_finished=self.createWorldfile)
                 self.alt_task.progressChanged.connect(lambda: self.dlg.progress_bar.setValue(
-                    start_progress + self.alt_task.progress() / self.workflow_ntasks))
+                    int(start_progress + self.alt_task.progress() / self.workflow_ntasks)))
                 QgsApplication.taskManager().addTask(self.alt_task)
 
         # start from loading photos metadata
@@ -753,7 +758,7 @@ class VerticalPhotoPlacer:
                                                  params=[files, imgsmeta, self.world_ext],
                                                  on_finished=self.onCreateWorldfileCompleted)
             self.alt_task.progressChanged.connect(lambda: self.dlg.progress_bar.setValue(
-                start_progress + self.alt_task.progress()/self.workflow_ntasks))
+                int(start_progress + self.alt_task.progress()/self.workflow_ntasks)))
             self.alt_task.taskTerminated.connect(lambda: self.dlg.progress_bar.reset())
             QgsApplication.taskManager().addTask(self.alt_task)
 
@@ -794,14 +799,14 @@ class VerticalPhotoPlacer:
         :type files: list
         """
 
-        try:
-            files = [os.path.realpath(f) for f in files]
-            selected_layer = QgsProject.instance().mapLayers().values()
-            for layer in selected_layer:
-                if os.path.realpath(layer.source()) in files:
+        files = [os.path.realpath(f) for f in files]
+        selected_layer = QgsProject.instance().mapLayers().values()
+        for layer in selected_layer:
+            if os.path.realpath(layer.source()) in files:
+                try:
                     QgsProject.instance().removeMapLayers([layer.id()])
-        except Exception:
-            pass
+                except Exception:
+                    continue
 
     def loadLayers(self, images):
         """Load photos as raster layers.
@@ -815,48 +820,51 @@ class VerticalPhotoPlacer:
                                                 "No valid vertical photo found in the selected photos/folder",
                                                 level=Qgis.Info,
                                                 duration=3)
-        else:
+            return
+
+        try:
             # To prevent QGIS from raising Coordinate Reference System Selector popup
             s = QSettings()
             default_value = s.value("/Projections/defaultBehaviour")
-            try:
-                s.setValue("/Projections/defaultBehaviour", "useProject")
+            s.setValue("/Projections/defaultBehaviour", "useProject")
 
-                first_img = None
-                count = 0
-                for img in images:
-                    status = self.loadGeotagImage(img)
-                    if status:
-                        self.iface.messageBar().clearWidgets()
-                        count = count + 1
-                        if first_img is None:
-                            first_img = img
+            first_img = None
+            count = 0
+            for img in images:
+                status = self.loadGeotagImage(img)
+                if status:
+                    self.iface.messageBar().clearWidgets()
+                    count = count + 1
+                    if first_img is None:
+                        first_img = img
 
-                self.zoomLayer(first_img)
-                self.iface.messageBar().pushMessage("Success", "Loaded {0} photos".format(count),
-                                                    level=Qgis.Success,
-                                                    duration=3)
-            except Exception:
-                raise
-            finally:
-                s.setValue("/Projections/defaultBehaviour", default_value)
+            self.zoomLayer(first_img)
+            self.iface.messageBar().pushMessage("Success", "Loaded {0} photos".format(count),
+                                                level=Qgis.Success,
+                                                duration=3)
+        except Exception:
+            raise
+        finally:
+            s.setValue("/Projections/defaultBehaviour", default_value)
 
     def loadBasemap(self):
         """Load a basemap if not loaded yet, Google Satellite >> OSM"""
 
         sources = [layer.source() for layer in QgsProject.instance().mapLayers().values()]
-        source_found = False
         for source in sources:
             if 'xyz&url' in source:
-                source_found = True
-        if not source_found:
+                return
+
+        try:
+            self.iface.addRasterLayer(BASEGOOGLE, 'Google Satellite', "wms")
+        except Exception:
             try:
-                self.iface.addRasterLayer(BASEGOOGLE, 'Google Satellite', "wms")
+                self.iface.addRasterLayer(BASEOSM, 'Open Street Map', "wms")
             except Exception:
-                try:
-                    self.iface.addRasterLayer(BASEOSM, 'Open Street Map', "wms")
-                except Exception:
-                    pass
+                self.iface.messageBar().pushMessage("Warning", "Cannot load basemap",
+                                                    level=Qgis.Warning,
+                                                    duration=3)
+                return
 
     def loadGeotagImage(self, imgname):
         """Load a photo as raster layer.
