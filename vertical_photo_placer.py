@@ -136,6 +136,7 @@ class VerticalPhotoPlacer:
         self.plugin_dir = os.path.dirname(__file__)
         # initialize locale
         locale = QSettings().value('locale/userLocale')[0:2]
+        self.iface.messageBar().pushMessage("Info", "Locale {0}".format(locale), level=Qgis.Info, duration=5)
         locale_path = os.path.join(
             self.plugin_dir,
             'i18n',
