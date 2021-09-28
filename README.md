@@ -36,3 +36,7 @@ This plugin is distributed under a GNU General Public License version 3.
 
 ## How to cite 
 Coming soon!
+
+## Related links
+* [Flight Separator](https://github.com/verticalphotoplacer/FlightSeparator)
+* [Heading Calculator](https://github.com/verticalphotoplacer/HeadingCalculator)
