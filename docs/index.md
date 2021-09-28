@@ -49,49 +49,56 @@ Please restart QGIS to apply these changes.
 
 ### Install from QGIS official plugin repository
 
-The easiest way to install VPP is from the QGIS official plugin repository.
-
-Please type "Vertical Photo Placer" in the search box if it is not easily located.
+The easiest way to install VPP is from the QGIS official plugin repository. First, open the Manage and Install Plugins Interface (See Figure 3).
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_interface.png?raw=true" alt="Quickview_Guide">
   <br>
   <br>
-  <em><b>Figure 1. Open QGIS Manage and Install Plugins Interface</b></em>
+  <em><b>Figure 3. Open QGIS Manage and Install Plugins Interface</b></em>
+</p>
+
+Please type "vertical photo placer" in the search box if the VPP is not easily located (See Figure 4). Then, install the plugin. You should get a successful message on finish.
+
+<p align="center">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_from_repo.png?raw=true" alt="Search and install VPP">
+  <br>
+  <br>
+  <em><b>Figure 4. Search and install the VPP</b></em>
 </p>
 
 ### Install from ZIP file
 
 It is also possible in QGIS to install plugins from zip files. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file. This file is made available at [the official QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/vertical_photo_placer/), or at [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/master/zip/vertical_photo_placer.zip). Please download it to your computer.
 
-Then, in the QGIS Manage and Install Plugins Interface, select tab "Install from ZIP" and install VPP from the downloaded zip file (See Figure 6).
+Then, in the QGIS Manage and Install Plugins Interface, select tab "Install from ZIP" and install VPP from the downloaded zip file (See Figure 5).
 QGIS may raise a warning as <em><b>"Security warning: installing a plugin from an untrusted source can lead to data loss and/or leak. Continue?"</b></em>. Press <b>Yes</b> to install. You should get a successful message on finish.
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/install_plugin_from_zip_archive_update.png?raw=true" alt="Install plugin from zip">
   <br>
   <br>
-  <em><b>Figure 6. Install VPP plugin from zip file</b></em>
+  <em><b>Figure 5. Install VPP plugin from zip file</b></em>
 </p>
 
 ## Quick Start
 
-VPP could be accessed either from the Menu Toolbar (Raster -> Vertical Photo Placer -> Vertical Photo Placer) or from the Plugins Toolbar (through app icon) (See Figure 7).
+VPP could be accessed either from the Menu Toolbar (Raster -> Vertical Photo Placer -> Vertical Photo Placer) or from the Plugins Toolbar (through app icon) (See Figure 6).
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/VPP_access.png?raw=true" alt="Access VPP">
   <br>
   <br>
-  <em><b>Figure 7. Open VPP</b></em>
+  <em><b>Figure 6. Open VPP</b></em>
 </p>
 
-The default VPP user interface requires only one input to work, which is the full path of the photos folder (See figure 8). Users could either drag and drop/or browse to the input folder. In this mode, VPP performs Quick view to geo-referencing and visualizing all vertical drone photos found in the input folder. Geo-referencing uses default parameters as available in each photo's metadata. This is done automatically.  
+The default VPP user interface requires only one input to work, which is the full path of the photos folder (See figure 7). Users could either drag and drop/or browse to the input folder. In this mode, VPP performs Quick view to geo-referencing and visualizing all vertical drone photos found in the input folder. Geo-referencing uses default parameters as available in each photo's metadata. This is done automatically.  
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/DefaultUI.PNG?raw=true" alt="Quickview_Guide">
   <br>
   <br>
-  <em><b>Figure 8. Guide to Quick view</b></em>
+  <em><b>Figure 7. Guide to Quick view</b></em>
 </p>
 
 It is recommended to use this feature first to quickly visualize photos. Quick view will often deliver good placement of vertical photos which were taken on flat terrain from a home point of similar terrain elevation.
@@ -108,47 +115,47 @@ Although GPS altitude is less stable than barometer altitude, it is still useful
 
 ### Home point correction
 
-This feature tries to estimate a photo's ground altitude from the home point's terrain altitude. It asks the user to locate the home point. Required inputs are photos input folder, a DEM file and location of the home point (See Figure 9). In the correction method, please select <em><b>Home point correction</b></em>. The DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
+This feature tries to estimate a photo's ground altitude from the home point's terrain altitude. It asks the user to locate the home point. Required inputs are photos input folder, a DEM file and location of the home point (See Figure 8). In the correction method, please select <em><b>Home point correction</b></em>. The DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/HomepointUI.PNG?raw=true" alt="Homepoing_Guide">
   <br>
   <br>
-  <em><b>Figure 9. Guide to Home point correction</b></em>
+  <em><b>Figure 8. Guide to Home point correction</b></em>
 </p>
 
-The basis of this feature is that a photo's ground altitude (True ground altitude) could be estimated from its barometer altitude, terrain altitude and home point's terrain altitude (See Figure 10).
+The basis of this feature is that a photo's ground altitude (True ground altitude) could be estimated from its barometer altitude, terrain altitude and home point's terrain altitude (See Figure 9).
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/homepoint_principle.png?raw=true" alt="Homepoing_Principle">
   <br>
   <br>
-  <em><b>Figure 10. Background of estimation of photo's ground altitude from home point's terrain altitude</b></em>
+  <em><b>Figure 9. Background of estimation of photo's ground altitude from home point's terrain altitude</b></em>
 </p>
 
 As the user is expected to provide location of the home point, it may be difficult in cases such as the user is not the person taking the photos, or just simply forgot the location. In such situations, [Adjacent photo matching](#adjacent-photo-matching) may be useful.
 
 ### Adjacent photo matching
 
-Similar to Home point correction, this feature also tries to estimate a photo's ground altitude from home point's terrain altitude. However, the way to estimate is different. Required inputs are photos input folder and sliding offset resulting from photos matching (See Figure 11). In the correction method, please select <em><b>Adjacent photo matching</b></em>. DEM is optional but recommended. The DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
+Similar to Home point correction, this feature also tries to estimate a photo's ground altitude from home point's terrain altitude. However, the way to estimate is different. Required inputs are photos input folder and sliding offset resulting from photos matching (See Figure 10). In the correction method, please select <em><b>Adjacent photo matching</b></em>. DEM is optional but recommended. The DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_after.PNG?raw=true" alt="Adj_UI_afterSliding">
   <br>
   <br>
-  <em><b>Figure 11. Guide to Adjacent photos matching (after sliding)</b></em>
+  <em><b>Figure 10. Guide to Adjacent photos matching (after sliding)</b></em>
 </p>
 
 The basis of this feature is that the home point's terrain altitude could be estimated from matching two adjacent photos (See Figure 13). 
 
 When first loaded, photo 1 and photo 2 are visualized in such a way that their geometric relationship is preserved. This process uses barometer altitude. 
-However, barometer altitude is measured against home point's terrain altitude, these photos will not match each other if home point is at higher or lower elevation (See Figure 12). By changing these barometer altitudes so that the photos match (this gives the sliding offset, See Figure 11 and Figure 13), it is possible to estimate the home point's terrain altitude. From that, the photo's ground altitude can be estimated. 
+However, barometer altitude is measured against home point's terrain altitude, these photos will not match each other if home point is at higher or lower elevation (See Figure 11). By changing these barometer altitudes so that the photos match (this gives the sliding offset, See Figure 10 and Figure 12), it is possible to estimate the home point's terrain altitude. From that, the photo's ground altitude can be estimated. 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_UI_before.PNG?raw=true" alt="Adj_UI_beforeSliding">
   <br>
   <br>
-  <em><b>Figure 12. Guide to Adjacent photos matching (before sliding)</b></em>
+  <em><b>Figure 11. Guide to Adjacent photos matching (before sliding)</b></em>
 </p>
 
 Substraction sliding offset from the photo's terrain altitude gives home point's terrain altitude.
@@ -157,27 +164,27 @@ Substraction sliding offset from the photo's terrain altitude gives home point's
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/Adj_principle.png?raw=true" alt="Adj_Principle">
   <br>
   <br>
-  <em><b>Figure 13. Background of estimation of photo's ground altitude by matching two adjacent photos</b></em>
+  <em><b>Figure 12. Background of estimation of photo's ground altitude by matching two adjacent photos</b></em>
 </p>
 
 ### Simple correction
 
-This feature tries to estimate a photo's ground altitude from GPS altitude. Required inputs are photos input folder and a DEM file (See Figure 14). In the correction method, please select <em><b>Simple correction</b></em>. The DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). This is similar to the previous barometer-based altitude correction.   
+This feature tries to estimate a photo's ground altitude from GPS altitude. Required inputs are photos input folder and a DEM file (See Figure 13). In the correction method, please select <em><b>Simple correction</b></em>. The DEM file could be SRTM (Shuttle Radar Topography Mission) or any applicable datasets (30 meter spatial resolution or less). This is similar to the previous barometer-based altitude correction.   
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/SimpleUI.PNG?raw=true" alt="SimpleCorr_Guide">
   <br>
   <br>
-  <em><b>Figure 14. Guide to Simple correction</b></em>
+  <em><b>Figure 13. Guide to Simple correction</b></em>
 </p>
 
-The basis of this feature is that the ground altitude is considered part of GPS altitude. The remaining part is terrain elevation. Therefore, ground altitude could be derived by subtracting terrain elevation from GPS altitude (See Figure 15). 
+The basis of this feature is that the ground altitude is considered part of GPS altitude. The remaining part is terrain elevation. Therefore, ground altitude could be derived by subtracting terrain elevation from GPS altitude (See Figure 14). 
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/simplecorr_principle.png?raw=true" alt="SimpleCorr_Principle">
   <br>
   <br>
-  <em><b>Figure 15. Background of estimation of photo's ground altitude by terrain subtraction</b></em>
+  <em><b>Figure 14. Background of estimation of photo's ground altitude by terrain subtraction</b></em>
 </p>
 
 Because Simple correction uses GPS altitude which may often be less stable than Barometer altitude, this feature should be used in cases where:
