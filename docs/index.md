@@ -51,23 +51,7 @@ To be updated.
 
 ### Install from ZIP file
 
-It is also possible in QGIS to install plugins from zip files. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file with the name "<b>vertical_photo_placer.zip</b>". VPP can be downloaded as a zip file from [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer) (See Figure 4). This will create a zip file named <b>"VerticalPhotoPlacer-master.zip"</b>. This zip file puts all source code inside a top level folder with the same name <b>"VerticalPhotoPlacer-master"</b>
-
-<p align="center">
-  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/download_zip.png?raw=true" alt="Download VPP as a zip file from Github">
-  <br>
-  <br>
-  <em><b>Figure 4. Download VPP as a zip file from Github</b></em>
-</p>
-
-This file is not ready for installation yet as the filename has to be "<b>vertical_photo_placer.zip</b>", and also the top level folder has to be <b>"vertical_photo_placer"</b>. This could be done by first unzip this file, change the folder name, then zip again. On Windows, [7-Zip 19.00](https://www.7-zip.org/) is recommended tool for working with zip files (See Figure 5).
- 
-<p align="center">
-  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/zip_unzip.png?raw=true" alt="Use 7-Zip to zip and unzip">
-  <br>
-  <br>
-  <em><b>Figure 5. Create a zip file with name "vertical_photo_placer.zip"</b></em>
-</p>
+It is also possible in QGIS to install plugins from zip files. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file with the name "<b>vertical_photo_placer.zip</b>". This file is also made available at [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/master/zip/vertical_photo_placer.zip). 
 
 Then, in the QGIS Manage and Install Plugins Interface, select tab "Install from ZIP" and install VPP from the downloaded zip file (See Figure 6).
 QGIS may raise a warning as <em><b>"Security warning: installing a plugin from an untrusted source can lead to data loss and/or leak. Continue?"</b></em>. Press <b>Yes</b> to install. You should get a successful message on finish.
