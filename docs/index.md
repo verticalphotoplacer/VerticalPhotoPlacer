@@ -20,8 +20,10 @@ This plugin should be used in cases when quick information visualization is need
 
 ### Prerequisites
 
-The VPP is developed with Python 3 and available for QGIS version 3.x (QGIS 3.2.3-Bonn is used in making of this guide). This plugin requires the installation of GDAL, NumPy, ExifTool.
+The VPP is developed with Python 3 and available for QGIS version 3.x. This plugin requires the installation of GDAL, NumPy, ExifTool.
 GDAL and NumPy are normally included in QGIS already. [ExifTool](https://exiftool.org/) is an external library for reading and writing metadata in photos. VPP uses ExifTool to access drone photo's metadata tags. 
+
+First, install QGIS 3.x if it is not installed yet. Please download and install following this [guide](https://qgis.org/en/site/forusers/download.html).
 
 To install ExifTool, download from the [official website](https://exiftool.org/) the suitable version to your machine (Windows or Linux/MacOS). Note that the Linux version can be used in both Linux and MacOS machines. The downloaded file is a compressed <b>.zip</b> file on Windows, or <b>.tar.gz</b> in Linux/MacOS. Then, extract the file to a folder (see Figure 1). It is free to choose the folder path. 
 
@@ -47,7 +49,16 @@ Please restart QGIS to apply these changes.
 
 ### Install from QGIS official plugin repository
 
-To be updated.
+The easiest way to install VPP is from the QGIS official plugin repository.
+
+Please type "Vertical Photo Placer" in the search box if it is not easily located.
+
+<p align="center">
+  <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_interface.png?raw=true" alt="Quickview_Guide">
+  <br>
+  <br>
+  <em><b>Figure 1. Open QGIS Manage and Install Plugins Interface</b></em>
+</p>
 
 ### Install from ZIP file
 
