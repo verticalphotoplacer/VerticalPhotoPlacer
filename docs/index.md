@@ -51,7 +51,7 @@ To be updated.
 
 ### Install from ZIP file
 
-It is also possible in QGIS to install plugins from zip files. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file. This file is also made available at [the official QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/vertical_photo_placer/), or at [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/master/zip/vertical_photo_placer.zip). Please download it to your computer.
+It is also possible in QGIS to install plugins from zip files. This feature is provided by the same QGIS Manage and Install Plugins Interface. This way, the source code of VPP should be compressed into a zip file. This file is made available at [the official QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/vertical_photo_placer/), or at [VPP Github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/master/zip/vertical_photo_placer.zip). Please download it to your computer.
 
 Then, in the QGIS Manage and Install Plugins Interface, select tab "Install from ZIP" and install VPP from the downloaded zip file (See Figure 6).
 QGIS may raise a warning as <em><b>"Security warning: installing a plugin from an untrusted source can lead to data loss and/or leak. Continue?"</b></em>. Press <b>Yes</b> to install. You should get a successful message on finish.
