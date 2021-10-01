@@ -16,6 +16,7 @@ This plugin should be used in cases when quick information visualization is need
    * [Adjacent photo matching](#adjacent-photo-matching)
    * [Simple correction](#simple-correction)
 * [FAQ](#faq)
+* [Useful links](#useful-links)
 
 ## Installation
 
