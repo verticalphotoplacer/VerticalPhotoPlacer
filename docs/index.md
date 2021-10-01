@@ -206,7 +206,7 @@ Because Simple correction uses GPS altitude which may often be less stable than 
 
 3. How to add support for more cameras?
 
-    Most of the required information is found in photo's metadata. However, the camera sensor's size is an additional required information. The [camlist.xml](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/master/model/camlist.xml) file contains a list of sensors which VPP uses. If your photo's sensor is not in this file, please add an entry for it  (name, width, height). VPP will be able to support your camera then, after reloading the plugin or restarting QGIS.
+    Most of the required information is found in photo's metadata. However, the camera sensor's size is an additional required information. The [camlist.xml](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/master/model/camlist.xml) file contains a list of sensors which provides VPP the cameras sensor's size. If your photo's sensor is not in this file, please add an entry for it  (name, width, height). VPP will be able to support your camera then, after reloading the plugin or restarting QGIS.
 
     It is highly appreciated if you could create a pull request or raise an issue to help VPP support more cameras in later versions.
 
