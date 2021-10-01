@@ -15,6 +15,7 @@ This plugin should be used in cases when quick information visualization is need
    * [Home point correction](#home-point-correction)
    * [Adjacent photo matching](#adjacent-photo-matching)
    * [Simple correction](#simple-correction)
+* [FAQ](#faq)
 
 ## Installation
 
@@ -191,6 +192,22 @@ Because Simple correction uses GPS altitude which may often be less stable than 
 * The photos do not have a Barometer altitude.  
 * It is difficult to remember the homepoint location.
 * The GPS accuracy is so low that it is difficult to match adjacent photos.
+
+## FAQ
+
+1. What kind of drone photos are supported?
+
+    VPP is developed to visualize vertical photos which is when gimbal pitch angle is perpendicular to the ground surface. However, oblique photos could be visualized also but it may not be easy to interpret. 
+
+2. What kind of cameras are supported?
+
+    VPP requires several metadata tags to perform geo-referencing of photos. These tags are often found in DJI drones photos. However, any photos that have enough information are also supported. 
+
+3. How to add support for more cameras?
+
+    Most of the required information is found in photo's metadata. However, the camera sensor's size is an additional required information. The [camlist.xml](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/master/model/camlist.xml) file contains a list of sensors which VPP uses. If your photo's sensor is not in this file, please add an entry for it  (name, width, height). VPP will be able to support your camera then, after reloading the plugin or restarting QGIS.
+
+It is highly appreciated if you could create a pull request or raise an issue to help VPP support more cameras in later versions.
 
 ## Useful links
 
