@@ -111,7 +111,7 @@ class ProcessMetadata:
         self.gpsalt = "exif:gpsaltitude"
         self.baroalt = "xmp:relativealtitude"
         self.groundalt = "xmp:groundaltitude"
-        self.heading = "xmp:gimbalyawdegree"
+        self.heading = "xmp:flightyawdegree"  # "xmp:gimbalyawdegree"
         self.cam_model = "exif:model"
 
         tags = [self.iw, self.ih, self.fl,

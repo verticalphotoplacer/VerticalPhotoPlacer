@@ -67,3 +67,37 @@ class ProcessCamera:
         except Exception:
             raise
 
+
+def guessCamSensorSize(img_width, img_height):
+    sw = img_width*1.55/1000000   # 3000 -> 4.5,  close guess to some DJI camera models
+    sh = img_height*1.55/1000000   # 4000 -> 6.0,  close guess to some DJI camera models
+
+    return sw, sh
+
+
+def getCamSensorSize(rcamobj, model, img_width, img_height):
+    """ Get sensor size from available list first.
+    If not found, try to guess.
+
+    :param rcamobj: ProcessCamera object
+    :type rcamobj: ProcessCamera
+
+    :param model: camera model name
+    :type model: string
+
+    :param img_width: photo width
+    :type img_width: int
+
+    :param img_height: photo height
+    :type img_height: int
+
+    :return: sensor width and height
+    :rtype: tuple
+    """
+
+    try:
+        sw, sh = rcamobj.getCamsize(model)
+    except CameraModelNotFound:
+        sw, sh = guessCamSensorSize(img_width, img_height)
+
+    return sw, sh

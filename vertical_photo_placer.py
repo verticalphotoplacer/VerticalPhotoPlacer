@@ -44,7 +44,7 @@ from .resources import *
 from .vertical_photo_placer_dialog import VerticalPhotoPlacerDialog
 
 from .model.process_metadata import ProcessMetadata
-from .model.process_camera import ProcessCamera
+from .model.process_camera import ProcessCamera, getCamSensorSize
 from .model.utility import getPhotos, getDSMValbyCoors, getGroundsize, meter2Degree, \
     computeHomepTerrAltfromAdjPhotosMatching, getWorldfileExistPhotos
 from .model.altitude_adjuster import loadPhotosMetadata, altitudeAdjusterAdjacent, \
@@ -172,8 +172,8 @@ class VerticalPhotoPlacer:
         self.progress_track = None
 
         # supported file extensions
-        self.img_exts = ".jpg"
-        self.world_ext = ".jgw"
+        self.img_exts = (".jpg", ".jpeg", ".jpe", ".jfif", ".jfi", ".jif")
+        self.world_ext = "w"
 
     # noinspection PyMethodMayBeStatic
     def tr(self, message):
@@ -336,7 +336,7 @@ class VerticalPhotoPlacer:
 
         filename, _filter = QFileDialog.getOpenFileNames(self.dlg, "Select two overlapped photos ",
                                                          self.img_folder,
-                                                         "*{0}".format(self.img_exts))
+                                                         "Images ({0})".format(" ".join(list("*"+i for i in self.img_exts))))
         self.dlg.progress_bar.setValue(0)
 
         if len(filename) == 2:
@@ -362,8 +362,8 @@ class VerticalPhotoPlacer:
                 diff_lat = specs[0].gpslat - specs[1].gpslat
                 diff_lon = specs[0].gpslon - specs[1].gpslon
 
-                camobj = ProcessCamera()
-                sw, sh = camobj.getCamsize(specs[0].cam_model)
+                sw, sh = getCamSensorSize(ProcessCamera(), specs[0].cam_model,
+                                          specs[0].image_width, specs[0].image_height)
                 sw, sh = meter2Degree(specs[0].gpslat, sw, sh)
 
                 # set position img 1

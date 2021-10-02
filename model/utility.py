@@ -75,7 +75,8 @@ def getWorldfileExistPhotos(photos, world_ext):
     has_worldfile = []
     n_files = len(photos)
     for i in range(0, n_files):
-        wf = splitext(photos[i])[0] + world_ext
+        imgpath_noext, ext = splitext(photos[i])
+        wf = imgpath_noext + ".{0}{1}{2}".format(ext[1], ext[-1], world_ext).lower()
         if isfile(wf):
             has_worldfile.append(i)
 
