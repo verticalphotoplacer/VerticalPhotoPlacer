@@ -8,19 +8,19 @@ tags:
   - qgis-plugin
 authors:
   - name: Duc Chuc Man 
-    affiliation: 3 
+    affiliation: 1 
   - name: Hiroshi Inoue 
-    affiliation: 2
+    affiliation: 3
   - name: Satoru Sugita
-    affiliation: 1
+    affiliation: 2
   - name: Hiromichi Fukui
-    affiliation: 1
+    affiliation: 2
 affiliations:
- - name: International Digital Earth Applied Science Research Center, Chubu University
+ - name: Graduate School of Engineering, Chubu University 
    index: 1
- - name: Integrated Research on Disaster Risk Reduction Division, National Research Institute for Earth Science and Disaster Resilience
+ - name: International Digital Earth Applied Science Research Center, Chubu University 
    index: 2
- - name: Graduate School of Engineering, Chubu University
+ - name: Integrated Research on Disaster Risk Reduction Division, National Research Institute for Earth Science and Disaster Resilience
    index: 3
 date: 04 October 2021
 bibliography: paper.bib
@@ -32,22 +32,21 @@ The Vertical Photo Placer (VPP) is a free open source plugin for QGIS that
 performs quick geo-referencing and visualization of vertical drone photos on map.
 Geo-reference is done by generating a world file [@ESRI2021] for each photo according to ESRI 
 specification. This plugin should be used in cases when quick information visualization 
-is needed such as disaster response. 
+is needed. 
 
 # Statement of need
 
 Drone imagery is a valuable source of information in various situations which include 
 disaster response. In such situations, quick disaster impact assessment and decision 
 is expected. VPP is developed as a quick mapping tool of drone imageries for disaster 
-impact assessment and decision support for local government. The tool simpliy places 
-geo-tagged vertical aerial photos on GIS maps without stitching process. The vertical 
-photos are then placed on the GIS base map with the world files. VPP does not make 
-seamless stitching and ignore small errors caused by misalignment of the cameras and 
-slope and curvature of the terrain in order to prioritize the promptness and simplicity 
-of the process for quick impact assessment during the disaster. We introduces VPP to 
-disaster management division of local goverments and fire departments in Mie-prefecture, 
-Japan and in the Philippines through hands-on training to be prepared for the future disasters 
-in the countries. 
+impact assessment and decision support for local government. The tool simply places 
+geo-tagged vertical aerial photos on GIS maps without stitching process, but rather 
+by support the world files. VPP does not make seamless stitching and ignore small errors 
+caused by misalignment of the cameras and slope and curvature of the terrain in order 
+to prioritize the promptness and simplicity of the process for quick impact assessment 
+during the disaster. We introduces VPP to disaster management division of local goverments 
+and fire departments in Mie-prefecture, Japan and in the Philippines through hands-on 
+training to be prepared for the future disasters in the countries. 
 
 # Overview of the Vertical Photo Placer Plugin
 
