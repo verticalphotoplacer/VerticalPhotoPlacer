@@ -8,8 +8,7 @@ tags:
   - qgis-plugin
 authors:
   - name: Duc Chuc Man^[co-first author] # note this makes a footnote saying 'co-first author'
-    orcid: 0000-0003-0872-7098
-    affiliation: 3 # (Multiple affiliations must be quoted)
+    affiliation: 3 
   - name: Hiroshi Inoue^[co-first author] # note this makes a footnote saying 'co-first author'
     affiliation: 2
   - name: Satoru Sugita^[co-first author]
@@ -26,17 +25,11 @@ affiliations:
 date: 04 October 2021
 bibliography: paper.bib
 
-# Optional fields if submitting to a AAS journal too, see this blog post:
-# https://blog.joss.theoj.org/2018/12/a-new-collaboration-with-aas-publishing
-aas-doi: 10.3847/xxxxx <- update this with the DOI from AAS once you know it.
-aas-journal: Astrophysical Journal <- The name of the AAS journal.
----
-
 # Summary
 
 The Vertical Photo Placer (VPP) is a free open source plugin for QGIS that 
 performs quick geo-referencing and visualization of vertical drone photos on map.
-Geo-reference is done by generating a world file [@ESRI2021] for each photo according to ESRI 
+Geo-reference is done by generating a world file for each photo according to ESRI 
 specification. This plugin should be used in cases when quick information visualization 
 is needed such as disaster response. 
 
@@ -89,4 +82,3 @@ The author thanks the International Digital Earth Applied Science Research Cente
 and National Research Institute for Earth Science and Disaster Resilience (NIED), Japan.
 
 # References
-1
