@@ -41,10 +41,10 @@ disaster response. In such situations, quick disaster impact assessment and deci
 is expected. VPP is developed as a quick mapping tool of drone imageries for disaster 
 impact assessment and decision support for local government. The tool simply places 
 geo-tagged vertical aerial photos on GIS maps without stitching process, but rather 
-by support the world files. VPP does not make seamless stitching and ignore small errors 
+by using the world files. VPP does not make seamless stitching and ignore small errors 
 caused by misalignment of the cameras and slope and curvature of the terrain in order 
 to prioritize the promptness and simplicity of the process for quick impact assessment 
-during the disaster. We introduces VPP to disaster management division of local goverments 
+during the disaster. We introduces VPP to disaster management division of local governments 
 and fire departments in Mie-prefecture, Japan and in the Philippines through hands-on 
 training to be prepared for the future disasters in the countries. 
 
