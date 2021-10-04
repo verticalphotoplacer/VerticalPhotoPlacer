@@ -60,7 +60,7 @@ The easiest way to install VPP is from the QGIS official plugin repository. Firs
   <em><b>Figure 3. Open QGIS Manage and Install Plugins Interface</b></em>
 </p>
 
-Please type "vertical photo placer" in the search box if the VPP is not easily located (See Figure 4). Then, install the plugin. You should get a successful message on finish.
+Please type "<b>vertical photo placer</b>" in the search box if the VPP is not easily located (See Figure 4). Then, install the plugin. You should get a successful message on finish.
 
 <p align="center">
   <img align="middle" src="https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/qgis_plugin_install_from_repo.png?raw=true" alt="Search and install VPP">
