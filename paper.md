@@ -75,8 +75,6 @@ Although GPS altitude is less stable than barometer altitude, it is still useful
 no barometer altitude, such as in some fixed-wing drones. But GPS altitude is still not the same as 
 ground altitude yet. Simple correction implements a method to estimate ground altitude from GPS altitude.
 
-# Citations
-
 # Acknowledgements
 
 The author thanks the International Digital Earth Applied Science Research Center, Chubu University 
