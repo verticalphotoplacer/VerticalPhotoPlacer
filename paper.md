@@ -57,6 +57,8 @@ all vertical drone photos found in the input folder. Geo-referencing uses defaul
 as available in each photo’s metadata. This features minimize user's interaction to provide 
 quick visualization of information. 
 
+![Usage of the `Vertical Photo Placer Plugin` for QGIS.\label{fig:plugin_usage}](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/paper/vpp_example_update.png)
+
 Visualization may be influenced by several factors which include photo’s ground altitude 
 and GPS accuracy. GPS accuracy is often known and could be corrected in sophisticated software. 
 This plugin focuses on estimation of the correct photo’s ground altitude, to enhance visualization.
@@ -74,10 +76,6 @@ no barometer altitude, such as in some fixed-wing drones. But GPS altitude is st
 ground altitude yet. Simple correction implements a method to estimate ground altitude from GPS altitude.
 
 # Citations
-
-# Figures
-
-![Usage of the `Vertical Photo Placer Plugin` for QGIS.\label{fig:plugin_usage}](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/paper/vpp_example_update.png)
 
 # Acknowledgements
 
