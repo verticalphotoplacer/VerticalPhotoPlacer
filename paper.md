@@ -83,8 +83,6 @@ ground altitude yet. Simple correction implements a method to estimate ground al
 
 # Figures
 
-![VPP](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/paper/vpp_example_update.png)
-
 # Acknowledgements
 
 The author thanks the International Digital Earth Applied Science Research Center, Chubu University 
