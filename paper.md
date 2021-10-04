@@ -7,13 +7,13 @@ tags:
   - visualization
   - qgis-plugin
 authors:
-  - name: Duc Chuc Man^[co-first author] # note this makes a footnote saying 'co-first author'
+  - name: Duc Chuc Man 
     affiliation: 3 
-  - name: Hiroshi Inoue^[co-first author] # note this makes a footnote saying 'co-first author'
+  - name: Hiroshi Inoue 
     affiliation: 2
-  - name: Satoru Sugita^[co-first author]
+  - name: Satoru Sugita
     affiliation: 1
-  - name: Hiromichi Fukui^[co-first author]
+  - name: Hiromichi Fukui
     affiliation: 1
 affiliations:
  - name: International Digital Earth Applied Science Research Center, Chubu University
