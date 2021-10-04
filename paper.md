@@ -77,6 +77,8 @@ ground altitude yet. Simple correction implements a method to estimate ground al
 
 # Figures
 
+![Usage of the `Vertical Photo Placer Plugin` for QGIS.\label{fig:plugin_usage}](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/blob/paper/vpp_example_update.png)
+
 # Acknowledgements
 
 The author thanks the International Digital Earth Applied Science Research Center, Chubu University 
