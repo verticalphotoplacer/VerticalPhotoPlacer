@@ -16,8 +16,6 @@ Please follow this [tutorial](https://verticalphotoplacer.github.io/VerticalPhot
 
 Please follow this [tutorial](https://verticalphotoplacer.github.io/VerticalPhotoPlacer/).
 
-[Videos] are also available.
-
 ## Contributing
 
 If you find some issue that you are willing to fix, code contributions are welcome. 
