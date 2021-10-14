@@ -6,7 +6,7 @@ The objective of VPP is to provide a tool for quickly geo-referencing and visual
 
 ![VPP](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/docs/img/vpp_example_update.png?raw=true)
 
-This plugin should be used in cases when quick information visualization is needed such as disaster response. If geo-referencing accuracy is top priority, more advanced tools should be considered.
+This plugin should be used in cases when quick information visualization is needed such as disaster response. If geo-referencing accuracy is top priority, other tools should be considered.
 
 ## Plugin installation
 
