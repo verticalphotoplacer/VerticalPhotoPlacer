@@ -214,6 +214,6 @@ Because Simple correction uses GPS altitude which may often be less stable than 
 
 * [Plugin github](https://github.com/verticalphotoplacer/VerticalPhotoPlacer)
 * [User guide page](https://verticalphotoplacer.github.io/VerticalPhotoPlacer/)
-* [QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/)
+* [QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/vertical_photo_placer/)
 * [Flight Separator](https://github.com/verticalphotoplacer/FlightSeparator)
 * [Heading Calculator](https://github.com/verticalphotoplacer/HeadingCalculator)
