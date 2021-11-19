@@ -134,22 +134,22 @@ def createSingleWorldfile(iw, ih, fl, sw, sh, lat, lon, groundalt, heading, worl
     :param fl: camera focal lenght in meter unit
     :type fl: float
 
-    :param sw: camera sensor width in degree unit (WGS84)
+    :param sw: camera sensor width in decimal unit (WGS84)
     :type sw: float
 
     :param sh: camera sensor height in degree unit (WGS84)
     :type sh: float
 
-    :param lat: GPS latitude in decimal
+    :param lat: GPS latitude in decimal unit (WGS84)
     :type lat: float
 
-    :param lon: GPS longitude in decimal
+    :param lon: GPS longitude in decimal unit (WGS84)
     :type lon: float
 
     :param groundalt: ground altitude in meter unit
     :type groundalt: float
 
-    :param heading: heading angle (Gimbal Yaw Degree)
+    :param heading: heading angle (Flight Yaw Degree)
     :type heading: float
 
     :param worldfile: name of the output world file
