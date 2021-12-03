@@ -27,7 +27,7 @@ GDAL and NumPy are normally included in QGIS already. [ExifTool](https://exiftoo
 
 First, install QGIS 3.x if it is not installed yet. Please download and install following this [guide](https://qgis.org/en/site/forusers/download.html).
 
-To install ExifTool, download from the [official website](https://exiftool.org/) the suitable version to your machine (Windows or Linux/MacOS). Note that the Linux version can be used in both Linux and MacOS machines. The downloaded file is a compressed <b>.zip</b> file on Windows, or <b>.tar.gz</b> in Linux/MacOS. Then, extract the file to a folder of your choice (see Figure 1). 
+To install ExifTool, download from the [official website](http://exiftool.sourceforge.net/index.html) the suitable version to your machine (Windows or Linux/MacOS). Note that the Linux version can be used in both Linux and MacOS machines. The downloaded file is a compressed <b>.zip</b> file on Windows, or <b>.tar.gz</b> in Linux/MacOS. Then, extract the file to a folder of your choice (see Figure 1). 
 
 In addition, a "<b>.ExifTool_config</b>" file is required. This file can be downloaded from the [VPP's tool folder](https://github.com/verticalphotoplacer/VerticalPhotoPlacer/tree/master/tool). Please download and insert it to your ExifTool folder (see Figure 1).
 
