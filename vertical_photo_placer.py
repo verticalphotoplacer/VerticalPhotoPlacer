@@ -498,16 +498,15 @@ class VerticalPhotoPlacer:
     def onAltSetrange(self):
         w = InputDialog()
         if w.exec():
-            val = w.getInputs()
+            val = 10*w.getInputs()
             self.dlg.adjphotos_slider.setMaximum(val)
             self.dlg.adjphotos_slider.setMinimum(0-val)
-            self.dlg.adjphotos_slider.setTickInterval(int(val/5))
-            self.dlg.alt_scale_maxlabel.setText("{0}m".format(val))
-            self.dlg.alt_scale_minlabel.setText("-{0}m".format(val))
+            self.dlg.alt_scale_maxlabel.setText("{0}m".format(val/10))
+            self.dlg.alt_scale_minlabel.setText("-{0}m".format(val/10))
 
     def onSliderValueChanged(self):
         if self.overlap_imgs[0] is not None and self.overlap_imgs[1] is not None:
-            altval = self.dlg.adjphotos_slider.value()
+            altval = self.dlg.adjphotos_slider.value()/10
             self.adjustPhoto2Geometry(altval)
             self.alt_corval = altval
 
