@@ -174,7 +174,7 @@ def createSingleWorldfile(iw, ih, fl, sw, sh, lat, lon, groundalt, heading, worl
         # Computes upper left coordinates as required in Worldfile specification.
         hypotenuse_hlength_degrees = math.sqrt(img_hwidth_degrees * img_hwidth_degrees +
                                                img_hlength_degrees * img_hlength_degrees)
-        invar_angle = math.degrees(math.atan(iw / ih))
+        invar_angle = math.degrees(math.atan(img_hwidth_degrees / img_hlength_degrees))
         lat_angle = heading - invar_angle
         y_length = hypotenuse_hlength_degrees * math.cos(math.radians(lat_angle))
         x_length = hypotenuse_hlength_degrees * math.sin(math.radians(lat_angle))
