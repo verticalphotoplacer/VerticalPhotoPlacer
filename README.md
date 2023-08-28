@@ -40,6 +40,6 @@ Coming soon!
 * [Heading Calculator](https://github.com/verticalphotoplacer/HeadingCalculator)
 
 ## Support this plugin
-If you find this software useful, please consider supporting its future development!
+If you find this software useful, please consider supporting its future development! <br/>
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chuc92man2)
 
