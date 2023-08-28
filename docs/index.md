@@ -1,6 +1,6 @@
 ![ADJ_Principle](https://github.com/verticalphotoplacer/VerticalPhotoPlacerPlugin/blob/master/icon/app_smaller.png?raw=true) Welcome to the Vertical Photo Placer plugin user guide!
 
-The Vertical Photo Placer (VPP) is a free open source plugin for QGIS that performs quick placement of vertical drone photos on map.
+The Vertical Photo Placer (VPP) is a free open source plugin for QGIS that performs quick placement of vertical drone photos on map. <a href="https://www.buymeacoffee.com/chuc92man2" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 The objective of VPP is to provide a tool for quickly geo-referencing and visualization of vertical drone photos on map. Geo-reference is done by generating a world file for each photo according to ESRI specification, see <a href="https://en.wikipedia.org/wiki/World_file">World file</a> for detailed information.
 
@@ -219,3 +219,6 @@ Because Simple correction uses GPS altitude which may often be less stable than 
 * [QGIS Python Plugins Repository](https://plugins.qgis.org/plugins/vertical_photo_placer/)
 * [Flight Separator](https://github.com/verticalphotoplacer/FlightSeparator)
 * [Heading Calculator](https://github.com/verticalphotoplacer/HeadingCalculator)
+
+## Support this plugin
+<a href="https://www.buymeacoffee.com/chuc92man2" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
