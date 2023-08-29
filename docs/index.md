@@ -222,5 +222,5 @@ Because Simple correction uses GPS altitude which may often be less stable than 
 * [Heading Calculator](https://github.com/verticalphotoplacer/HeadingCalculator)
 
 ## Support this plugin
-If you find this software to be of value, we kindly ask you to consider supporting its future development.
+If you find this software useful, consider making a contribution to its continuous development! :rocket::rocket::rocket:<br />
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chuc92man2)
