@@ -38,7 +38,3 @@ Coming soon!
 ## Related tools
 * [Flight Separator](https://github.com/verticalphotoplacer/FlightSeparator)
 * [Heading Calculator](https://github.com/verticalphotoplacer/HeadingCalculator)
-
-## Support this plugin
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chuc92man2)
-
